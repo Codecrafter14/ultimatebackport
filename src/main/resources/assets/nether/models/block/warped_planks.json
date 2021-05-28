@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "nether:blocks/warped_planks",
+    "up": "nether:blocks/warped_planks",
+    "north": "nether:blocks/warped_planks",
+    "east": "nether:blocks/warped_planks",
+    "south": "nether:blocks/warped_planks",
+    "west": "nether:blocks/warped_planks",
+    "particle": "nether:blocks/warped_planks"
+  }
+}

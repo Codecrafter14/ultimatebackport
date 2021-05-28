@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "nether:weeping_vines"
+    },
+    "age=1": {
+      "model": "nether:weeping_vines"
+    },
+    "age=2": {
+      "model": "nether:weeping_vines"
+    },
+    "age=3": {
+      "model": "nether:weeping_vines"
+    },
+    "age=4": {
+      "model": "nether:weeping_vines"
+    },
+    "age=5": {
+      "model": "nether:weeping_vines"
+    },
+    "age=6": {
+      "model": "nether:weeping_vines"
+    },
+    "age=7": {
+      "model": "nether:weeping_vines"
+    },
+    "age=8": {
+      "model": "nether:weeping_vines"
+    },
+    "age=9": {
+      "model": "nether:weeping_vines"
+    },
+    "age=10": {
+      "model": "nether:weeping_vines"
+    },
+    "age=11": {
+      "model": "nether:weeping_vines"
+    },
+    "age=12": {
+      "model": "nether:weeping_vines"
+    },
+    "age=13": {
+      "model": "nether:weeping_vines"
+    },
+    "age=14": {
+      "model": "nether:weeping_vines"
+    },
+    "age=15": {
+      "model": "nether:weeping_vines"
+    }
+  }
+}

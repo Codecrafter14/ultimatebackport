@@ -39,16 +39,16 @@
     "spawnBiome": true,
     "biomeWeight": 10,
     "biomeDictionaryTypes": [],
-    "grassPerChunk": 4,
+    "grassPerChunk": 0,
     "seagrassPerChunk": 0,
-    "flowersPerChunk": 4,
+    "flowersPerChunk": 0,
     "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
     "sandPatchesPerChunk": 0,
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 1,
+    "treesPerChunk": 0,
     "vanillaTreeType": "Default",
     "treeType": 0,
     "minHeight": 7,
@@ -77,9 +77,7 @@
     "spawnShipwreck": false,
     "oceanRuinType": "NONE",
     "defaultFeatures": [
-      "Caves",
-      "Ores",
-      "FrozenTopLayer"
+      "Fossils"
     ],
     "spawnEntries": [
       {

@@ -1,0 +1,16 @@
+{
+  "group": "nether",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "nether:netherite_ingot"
+    },
+    {
+      "item": "minecraft:diamond_hoe"
+    }
+  ],
+  "result": {
+    "item": "nether:netherite_hoe",
+    "count": 1
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "_fv": 18,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Smithing table",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Smithing table",
+          "x": 173,
+          "y": 45
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 142,
+          "y": 91
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 198,
+          "y": 91
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 264,
+          "y": 91
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gui3.png",
+          "use1Xscale": false,
+          "name": "gui3.png",
+          "x": 128,
+          "y": 48
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gui2.png",
+          "use1Xscale": false,
+          "name": "gui2.png",
+          "x": 224,
+          "y": 91
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gui1.png",
+          "use1Xscale": false,
+          "name": "gui1.png",
+          "x": 174,
+          "y": 93
+        }
+      }
+    ]
+  }
+}

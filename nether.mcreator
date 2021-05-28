@@ -1,7 +1,8 @@
 {
   "id_map": {
-    "ENTITY": 12,
-    "DIMENSION": 1
+    "DIMENSION": 1,
+    "GUI": 1,
+    "ENTITY": 12
   },
   "mod_elements": [
     {
@@ -817,6 +818,339 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "shroom_light"
+    },
+    {
+      "name": "WarpedPlanks",
+      "type": "block",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "warped_planks"
+    },
+    {
+      "name": "WapredLog",
+      "type": "block",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "warped_log"
+    },
+    {
+      "name": "WarpedFence",
+      "type": "block",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "warped_fence"
+    },
+    {
+      "name": "WarpedTrapdoor",
+      "type": "block",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "warped_trapdoor"
+    },
+    {
+      "name": "TouristHotspot",
+      "type": "achievement",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tourist_hotspot"
+    },
+    {
+      "name": "Cute",
+      "type": "achievement",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cute"
+    },
+    {
+      "name": "SmithingGUI",
+      "type": "gui",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 1
+      },
+      "registry_name": "smithing_gui",
+      "path": "~/recipes"
+    },
+    {
+      "name": "Smithing",
+      "type": "procedure",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smithing",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/recipes"
+    },
+    {
+      "name": "SmithingTableOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smithing_table_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SmithingTable",
+      "type": "block",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smithing_table",
+      "path": "~/recipes"
+    },
+    {
+      "name": "WeepingVines",
+      "type": "plant",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "weeping_vines"
+    },
+    {
+      "name": "NetherSword",
+      "type": "recipe",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nether_sword",
+      "path": "~/recipes"
+    },
+    {
+      "name": "NetherHelmet",
+      "type": "recipe",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nether_helmet",
+      "path": "~/recipes"
+    },
+    {
+      "name": "BasaltBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "basalt_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShroomLightBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shroom_light_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NetherAxe",
+      "type": "recipe",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nether_axe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "NetherHoe",
+      "type": "recipe",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nether_hoe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "NetherPickaxe",
+      "type": "recipe",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nether_pickaxe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "NetherShovel",
+      "type": "recipe",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nether_shovel",
+      "path": "~/recipes"
+    },
+    {
+      "name": "NetherChestplate",
+      "type": "recipe",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nether_chestplate",
+      "path": "~/recipes"
+    },
+    {
+      "name": "NetherLeggins",
+      "type": "recipe",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nether_leggins",
+      "path": "~/recipes"
+    },
+    {
+      "name": "NetherBoots",
+      "type": "recipe",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nether_boots",
+      "path": "~/recipes"
+    },
+    {
+      "name": "NewFlintAndSteel",
+      "type": "recipe",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "new_flint_and_steel",
+      "path": "~/recipes"
+    },
+    {
+      "name": "Junk",
+      "type": "achievement",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "junk"
+    },
+    {
+      "name": "AdvancementNetheriteFull",
+      "type": "procedure",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "advancement_netherite_full",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/recipes"
     }
   ],
   "variable_elements": [],
@@ -1037,6 +1371,30 @@
       ],
       "category": "master",
       "subtitle": ""
+    },
+    {
+      "name": "block.basalt.break",
+      "files": [
+        "break1",
+        "break2",
+        "break3",
+        "break4",
+        "break5"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "block.shroomlight.break",
+      "files": [
+        "break1",
+        "break2",
+        "break3",
+        "break4",
+        "break5"
+      ],
+      "category": "master",
+      "subtitle": ""
     }
   ],
   "language_map": {
@@ -1046,20 +1404,29 @@
       "tile.warped_nether_wart.name": "Warped Nether Wart Block",
       "entity.piglin_normal.name": "Piglin",
       "item.netherite_hoe.name": "Netherite Hoe",
+      "tile.smithing_table.name": "Smithing Table",
       "entity.strider.name": "Strider",
+      "advancements.cute.descr": "Distract a piglin with gold",
+      "subtitles.block.basalt.break": "",
       "tipped_arrow.effect.slow_falling": "Arrow of Slow Falling",
       "tile.respawnancor_3.name": "Respawnancorcharged 2",
+      "tile.weeping_vines.name": "Weeping Vines",
+      "advancements.junk.descr": "Wear full Netherite armor.",
       "item.netherite_shovel.name": "Netherite Shovel",
       "potion.effect.slow_falling": "Slow Falling",
+      "advancements.junk.title": "Cover yourself in junk!",
       "entity.piglinbrute.name": "Piglin brute",
       "subtitles.music.crimson_forest": "",
+      "advancements.cute.title": "Oh, how cute!",
       "itemGroup.tabnetherupdate_blocks": "Netherupdate Mod",
       "subtitles.blocks.basalt.break": "",
       "subtitles.mob.piglin.hurt": "",
       "advancements.enter_nether.descr": "go to nether",
+      "tile.warped_fence.name": "Warped Fence",
       "subtitles.mob.hoglin.death": "",
       "item.record.pigstep.desc": "Lena Raine",
       "advancements.enter_nether.title": "we have to go deeper",
+      "subtitles.block.shroomlight.break": "",
       "advancements.hobby.descr": " Upgrade a diamond pickaxe to Netherite. Then think about your life choices.",
       "item.netheite_armorhelmet.name": "Netheite Armor Helmet",
       "subtitles.music.nether_waste": "",
@@ -1068,6 +1435,7 @@
       "item.netherite_sword.name": "Netherite Sword",
       "tile.netherite_block.name": "Netherite Block",
       "tile.respawnancor.name": "Respawn ancor",
+      "advancements.tourist_hotspot.descr": "Travel to all Nether biomes",
       "subtitles.mob.zoglin.step": "",
       "entity.zoglin.name": "Zoglin",
       "item.netheite_armorboots.name": "Netheite Armor Boots",
@@ -1083,6 +1451,7 @@
       "splash_potion.effect.slow_falling": "Splash Slow Falling",
       "tile.blackstone_wall.name": "Blackstone Wall",
       "subtitles.mob.piglinbrute.death": "",
+      "tile.warped_planks.name": "Warped Planks",
       "tile.warped_fungus.name": "Warped Fungus",
       "subtitles.block.respawn_ancor.charge": "",
       "subtitles.music.pigstep": "",
@@ -1108,6 +1477,7 @@
       "tile.crimson_trap_door.name": "Crimson Trap Door",
       "tile.respawnancorcharged_2.name": "Respawnancorcharged 2",
       "advancements.hobby.title": "My favourite Hobby",
+      "tile.warped_trapdoor.name": "Warped Trapdoor",
       "tile.twisting_vines.name": "Twisting Vines",
       "subtitles.mob.hoglin.ambient": "",
       "tile.crimson_plank.name": "Crimson Plank",
@@ -1116,8 +1486,10 @@
       "subtitles.mob.piglinbrute.idle": "",
       "subtitles.mob.zoglin.hurt": "",
       "item.netherite_ingot.name": "Netherite Ingot",
+      "tile.warped_log.name": "Warped Log",
       "item.netheite_armorlegs.name": "Netheite Armor Leggings",
-      "subtitles.mob.piglin.death": ""
+      "subtitles.mob.piglin.death": "",
+      "advancements.tourist_hotspot.title": "Tourist Hotspot"
     }
   },
   "foldersRoot": {
@@ -1125,6 +1497,10 @@
     "children": [
       {
         "name": "vanilla",
+        "children": []
+      },
+      {
+        "name": "recipes",
         "children": []
       }
     ]

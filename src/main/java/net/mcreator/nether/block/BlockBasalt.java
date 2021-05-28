@@ -13,6 +13,7 @@ import net.minecraft.util.Rotation;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.Item;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
@@ -23,8 +24,12 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockDirectional;
 import net.minecraft.block.Block;
 
+import net.mcreator.nether.procedure.ProcedureBasaltBlockDestroyedByPlayer;
 import net.mcreator.nether.creativetab.TabNetherupdateBlocks;
 import net.mcreator.nether.ElementsNetherMod;
+
+import java.util.Map;
+import java.util.HashMap;
 
 @ElementsNetherMod.ModElement.Tag
 public class BlockBasalt extends ElementsNetherMod.ModElement {
@@ -97,6 +102,23 @@ public class BlockBasalt extends ElementsNetherMod.ModElement {
 			else
 				facing = EnumFacing.SOUTH;
 			return this.getDefaultState().withProperty(FACING, facing);
+		}
+
+		@Override
+		public boolean removedByPlayer(IBlockState state, World world, BlockPos pos, EntityPlayer entity, boolean willHarvest) {
+			boolean retval = super.removedByPlayer(state, world, pos, entity, willHarvest);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ProcedureBasaltBlockDestroyedByPlayer.executeProcedure($_dependencies);
+			}
+			return retval;
 		}
 	}
 }

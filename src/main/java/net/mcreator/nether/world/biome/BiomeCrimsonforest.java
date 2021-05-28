@@ -15,6 +15,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.Block;
 
 import net.mcreator.nether.entity.EntityPiglinNormal;
+import net.mcreator.nether.block.BlockWeepingVines;
 import net.mcreator.nether.block.BlockShroomLight;
 import net.mcreator.nether.block.BlockNewNetherRack;
 import net.mcreator.nether.block.BlockCrimsonNylium;
@@ -118,7 +119,7 @@ public class BiomeCrimsonforest extends ElementsNetherMod.ModElement {
 										BlockPos blockpos = new BlockPos(k1, genh, i2);
 										state = world.getBlockState(blockpos);
 										if (state.getBlock().isAir(state, world, blockpos) || state.getBlock().isLeaves(state, world, blockpos)
-												|| state.getBlock() == Blocks.VINE.getDefaultState().getBlock()
+												|| state.getBlock() == BlockWeepingVines.block.getDefaultState().getBlock()
 												|| state.getBlock() == Blocks.NETHER_WART_BLOCK.getDefaultState().getBlock()) {
 											this.setBlockAndNotifyAdequately(world, blockpos, Blocks.NETHER_WART_BLOCK.getDefaultState());
 										}
@@ -129,18 +130,19 @@ public class BiomeCrimsonforest extends ElementsNetherMod.ModElement {
 						for (int genh = 0; genh < height; genh++) {
 							BlockPos genhPos = position.up(genh);
 							state = world.getBlockState(genhPos);
-							if (state.getBlock().isAir(state, world, genhPos) || state.getBlock() == Blocks.VINE.getDefaultState().getBlock()
+							if (state.getBlock().isAir(state, world, genhPos)
+									|| state.getBlock() == BlockWeepingVines.block.getDefaultState().getBlock()
 									|| state.getBlock() == Blocks.NETHER_WART_BLOCK.getDefaultState().getBlock()) {
 								this.setBlockAndNotifyAdequately(world, position.up(genh), BlockCrimsonLog.block.getDefaultState());
 								if (genh > 0) {
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(-1, genh, 0)))
-										this.setBlockAndNotifyAdequately(world, position.add(-1, genh, 0), Blocks.VINE.getDefaultState());
+										this.setBlockAndNotifyAdequately(world, position.add(-1, genh, 0), BlockWeepingVines.block.getDefaultState());
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(1, genh, 0)))
-										this.setBlockAndNotifyAdequately(world, position.add(1, genh, 0), Blocks.VINE.getDefaultState());
+										this.setBlockAndNotifyAdequately(world, position.add(1, genh, 0), BlockWeepingVines.block.getDefaultState());
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(0, genh, -1)))
-										this.setBlockAndNotifyAdequately(world, position.add(0, genh, -1), Blocks.VINE.getDefaultState());
+										this.setBlockAndNotifyAdequately(world, position.add(0, genh, -1), BlockWeepingVines.block.getDefaultState());
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(0, genh, 1)))
-										this.setBlockAndNotifyAdequately(world, position.add(0, genh, 1), Blocks.VINE.getDefaultState());
+										this.setBlockAndNotifyAdequately(world, position.add(0, genh, 1), BlockWeepingVines.block.getDefaultState());
 								}
 							}
 						}
@@ -191,10 +193,10 @@ public class BiomeCrimsonforest extends ElementsNetherMod.ModElement {
 		}
 
 		private void addVines(World world, BlockPos pos) {
-			this.setBlockAndNotifyAdequately(world, pos, Blocks.VINE.getDefaultState());
+			this.setBlockAndNotifyAdequately(world, pos, BlockWeepingVines.block.getDefaultState());
 			int i = 5;
 			for (BlockPos blockpos = pos.down(); world.isAirBlock(blockpos) && i > 0; --i) {
-				this.setBlockAndNotifyAdequately(world, blockpos, Blocks.VINE.getDefaultState());
+				this.setBlockAndNotifyAdequately(world, blockpos, BlockWeepingVines.block.getDefaultState());
 				blockpos = blockpos.down();
 			}
 		}

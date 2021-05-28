@@ -16,6 +16,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.Item;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.material.Material;
@@ -23,10 +24,13 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.Block;
 
 import net.mcreator.nether.world.WorldNetherNew;
+import net.mcreator.nether.procedure.ProcedureShroomLightBlockDestroyedByPlayer;
 import net.mcreator.nether.creativetab.TabNetherupdateBlocks;
 import net.mcreator.nether.ElementsNetherMod;
 
 import java.util.Random;
+import java.util.Map;
+import java.util.HashMap;
 
 @ElementsNetherMod.ModElement.Tag
 public class BlockShroomLight extends ElementsNetherMod.ModElement {
@@ -84,6 +88,23 @@ public class BlockShroomLight extends ElementsNetherMod.ModElement {
 			setLightLevel(1F);
 			setLightOpacity(255);
 			setCreativeTab(TabNetherupdateBlocks.tab);
+		}
+
+		@Override
+		public boolean removedByPlayer(IBlockState state, World world, BlockPos pos, EntityPlayer entity, boolean willHarvest) {
+			boolean retval = super.removedByPlayer(state, world, pos, entity, willHarvest);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ProcedureShroomLightBlockDestroyedByPlayer.executeProcedure($_dependencies);
+			}
+			return retval;
 		}
 	}
 }

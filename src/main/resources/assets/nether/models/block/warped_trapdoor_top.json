@@ -1,0 +1,7 @@
+{
+  "parent": "block/trapdoor_top",
+  "textures": {
+    "texture": "nether:blocks/warped_trapdoor",
+    "particle": "nether:blocks/warped_trapdoor"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "group": "nether",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "nether:netherite_ingot"
+    },
+    {
+      "item": "minecraft:diamond_leggings"
+    }
+  ],
+  "result": {
+    "item": "nether:netheite_armorlegs",
+    "count": 1
+  }
+}

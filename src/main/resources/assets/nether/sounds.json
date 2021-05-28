@@ -406,5 +406,55 @@
         "stream": false
       }
     ]
+  },
+  "block.basalt.break": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nether:break1",
+        "stream": false
+      },
+      {
+        "name": "nether:break2",
+        "stream": false
+      },
+      {
+        "name": "nether:break3",
+        "stream": false
+      },
+      {
+        "name": "nether:break4",
+        "stream": false
+      },
+      {
+        "name": "nether:break5",
+        "stream": false
+      }
+    ]
+  },
+  "block.shroomlight.break": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nether:break1",
+        "stream": false
+      },
+      {
+        "name": "nether:break2",
+        "stream": false
+      },
+      {
+        "name": "nether:break3",
+        "stream": false
+      },
+      {
+        "name": "nether:break4",
+        "stream": false
+      },
+      {
+        "name": "nether:break5",
+        "stream": false
+      }
+    ]
   }
 }

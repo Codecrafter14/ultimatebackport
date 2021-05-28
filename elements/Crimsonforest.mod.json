@@ -60,7 +60,7 @@
       "value": "Blocks.NETHER_WART_BLOCK"
     },
     "treeVines": {
-      "value": "Blocks.VINE"
+      "value": "CUSTOM:WeepingVines"
     },
     "treeFruits": {
       "value": "CUSTOM:ShroomLight"

@@ -34,6 +34,8 @@ import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.block.Block;
 
+import net.mcreator.nether.gui.GuiSmithingGUI;
+
 import java.util.function.Supplier;
 import java.util.Random;
 import java.util.Map;
@@ -94,6 +96,10 @@ public class ElementsNetherMod implements IFuelHandler, IWorldGenerator {
 				new net.minecraft.util.SoundEvent(new ResourceLocation("nether", "mob.piglin.ambient")));
 		sounds.put(new ResourceLocation("nether", "mob.piglin.step"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("nether", "mob.piglin.step")));
+		sounds.put(new ResourceLocation("nether", "block.basalt.break"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("nether", "block.basalt.break")));
+		sounds.put(new ResourceLocation("nether", "block.shroomlight.break"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("nether", "block.shroomlight.break")));
 	}
 
 	public void preInit(FMLPreInitializationEvent event) {
@@ -162,11 +168,15 @@ public class ElementsNetherMod implements IFuelHandler, IWorldGenerator {
 	public static class GuiHandler implements IGuiHandler {
 		@Override
 		public Object getServerGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
+			if (id == GuiSmithingGUI.GUIID)
+				return new GuiSmithingGUI.GuiContainerMod(world, x, y, z, player);
 			return null;
 		}
 
 		@Override
 		public Object getClientGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
+			if (id == GuiSmithingGUI.GUIID)
+				return new GuiSmithingGUI.GuiWindow(world, x, y, z, player);
 			return null;
 		}
 	}

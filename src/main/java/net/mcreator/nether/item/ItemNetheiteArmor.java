@@ -12,9 +12,9 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EntityEquipmentSlot;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
+import net.mcreator.nether.creativetab.TabNetherupdateBlocks;
 import net.mcreator.nether.ElementsNetherMod;
 
 @ElementsNetherMod.ModElement.Tag
@@ -36,13 +36,13 @@ public class ItemNetheiteArmor extends ElementsNetherMod.ModElement {
 		ItemArmor.ArmorMaterial enuma = EnumHelper.addArmorMaterial("NETHEITE_ARMOR", "nether:netherite__", 37, new int[]{2, 5, 6, 2}, 9,
 				(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("")), 3f);
 		elements.items.add(() -> new ItemArmor(enuma, 0, EntityEquipmentSlot.HEAD).setUnlocalizedName("netheite_armorhelmet")
-				.setRegistryName("netheite_armorhelmet").setCreativeTab(CreativeTabs.COMBAT));
+				.setRegistryName("netheite_armorhelmet").setCreativeTab(TabNetherupdateBlocks.tab));
 		elements.items.add(() -> new ItemArmor(enuma, 0, EntityEquipmentSlot.CHEST).setUnlocalizedName("netheite_armorbody")
-				.setRegistryName("netheite_armorbody").setCreativeTab(CreativeTabs.COMBAT));
+				.setRegistryName("netheite_armorbody").setCreativeTab(TabNetherupdateBlocks.tab));
 		elements.items.add(() -> new ItemArmor(enuma, 0, EntityEquipmentSlot.LEGS).setUnlocalizedName("netheite_armorlegs")
-				.setRegistryName("netheite_armorlegs").setCreativeTab(CreativeTabs.COMBAT));
+				.setRegistryName("netheite_armorlegs").setCreativeTab(TabNetherupdateBlocks.tab));
 		elements.items.add(() -> new ItemArmor(enuma, 0, EntityEquipmentSlot.FEET).setUnlocalizedName("netheite_armorboots")
-				.setRegistryName("netheite_armorboots").setCreativeTab(CreativeTabs.COMBAT));
+				.setRegistryName("netheite_armorboots").setCreativeTab(TabNetherupdateBlocks.tab));
 	}
 
 	@SideOnly(Side.CLIENT)

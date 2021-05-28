@@ -39,9 +39,9 @@ public class BiomeSoulsandValley extends ElementsNetherMod.ModElement {
 			setRegistryName("soulsand_valley");
 			topBlock = BlockSouldirt.block.getDefaultState();
 			fillerBlock = Blocks.SOUL_SAND.getDefaultState();
-			decorator.treesPerChunk = 1;
-			decorator.flowersPerChunk = 4;
-			decorator.grassPerChunk = 4;
+			decorator.treesPerChunk = 0;
+			decorator.flowersPerChunk = 0;
+			decorator.grassPerChunk = 0;
 			decorator.mushroomsPerChunk = 0;
 			decorator.bigMushroomsPerChunk = 0;
 			decorator.reedsPerChunk = 0;
