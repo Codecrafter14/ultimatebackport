@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "nether:blocks/crying_obsidian",
+    "up": "nether:blocks/portal2",
+    "north": "nether:blocks/respawn_anchor_side2",
+    "east": "nether:blocks/respawn_anchor_side2",
+    "south": "nether:blocks/respawn_anchor_side2",
+    "west": "nether:blocks/respawn_anchor_side2",
+    "particle": "nether:blocks/crying_obsidian"
+  }
+}

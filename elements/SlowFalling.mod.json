@@ -1,0 +1,22 @@
+{
+  "_fv": 18,
+  "_type": "potion",
+  "definition": {
+    "name": "Slow Falling",
+    "effectName": "Slow Falling",
+    "icon": "icons.png",
+    "color": {
+      "value": -52,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": false,
+    "registerPotionType": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "SlowFallingPotionStartedapplied"
+    }
+  }
+}

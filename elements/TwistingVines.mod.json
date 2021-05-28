@@ -1,0 +1,86 @@
+{
+  "_fv": 18,
+  "_type": "plant",
+  "definition": {
+    "renderType": 12,
+    "texture": "twisting_vines_base",
+    "textureBottom": "",
+    "customModelName": "Cross model",
+    "itemTexture": "twisting_vines_base",
+    "particleTexture": "twisting_vines_bottom",
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "plantType": "growapable",
+    "staticPlantGenerationType": "Flower",
+    "growapableSpawnType": "Nether",
+    "growapableMaxHeight": 14,
+    "doublePlantGenerationType": "Flower",
+    "customBoundingBox": false,
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 16.0,
+        "Mz": 16.0,
+        "subtract": false
+      }
+    ],
+    "name": "Twisting Vines",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:NetherupdateBlocks"
+    },
+    "hardness": 0.0,
+    "resistance": 0.0,
+    "luminance": 0,
+    "unbreakable": false,
+    "soundOnStep": {
+      "value": "PLANT"
+    },
+    "useLootTableForDrops": false,
+    "customDrop": {
+      "value": ""
+    },
+    "dropAmount": 1,
+    "forceTicking": false,
+    "emissiveRendering": false,
+    "hasTileEntity": false,
+    "isReplaceable": false,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "XZ",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "jumpFactor": 1.0,
+    "speedFactor": 1.0,
+    "canBePlacedOn": [
+      {
+        "value": "CUSTOM:WarpedFloor"
+      },
+      {
+        "value": "Blocks.GRASS"
+      },
+      {
+        "value": "Blocks.DIRT#0"
+      },
+      {
+        "value": "CUSTOM:CrimsonNylium"
+      }
+    ],
+    "frequencyOnChunks": 5,
+    "spawnWorldTypes": [
+      "CUSTOM:NetherNew"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Warpedforest"
+      }
+    ]
+  }
+}

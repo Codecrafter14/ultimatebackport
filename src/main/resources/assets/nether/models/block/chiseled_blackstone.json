@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "nether:blocks/chiseled_polished_blackstone",
+    "up": "nether:blocks/chiseled_polished_blackstone",
+    "north": "nether:blocks/chiseled_polished_blackstone",
+    "east": "nether:blocks/chiseled_polished_blackstone",
+    "south": "nether:blocks/chiseled_polished_blackstone",
+    "west": "nether:blocks/chiseled_polished_blackstone",
+    "particle": "nether:blocks/chiseled_polished_blackstone"
+  }
+}

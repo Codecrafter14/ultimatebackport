@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "nether:new_nether_rack"
+    },
+    "title": {
+      "translate": "advancements.enter_nether.title"
+    },
+    "description": {
+      "translate": "advancements.enter_nether.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "enter_nether": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "nether:nether_new"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1,
+    "recipes": [
+      "nether:pickaxe_craft",
+      "nether:goldore",
+      "nether:ancient_debris_recipe",
+      "nether:craft_netherite_ingot"
+    ]
+  },
+  "parent": "nether:hobby"
+}

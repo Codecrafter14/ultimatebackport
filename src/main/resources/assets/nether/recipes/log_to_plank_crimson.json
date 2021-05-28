@@ -1,0 +1,13 @@
+{
+  "group": "nether",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "nether:crimson_log"
+    }
+  ],
+  "result": {
+    "item": "nether:crimson_plank",
+    "count": 4
+  }
+}

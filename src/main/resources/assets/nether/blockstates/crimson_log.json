@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "normal": {
+      "model": "nether:crimson_log"
+    },
+    "facing=south": {
+      "model": "nether:crimson_log"
+    },
+    "facing=north": {
+      "model": "nether:crimson_log"
+    },
+    "facing=east": {
+      "model": "nether:crimson_log",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "nether:crimson_log",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "nether:crimson_log",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "nether:crimson_log",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

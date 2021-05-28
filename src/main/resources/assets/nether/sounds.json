@@ -1,0 +1,410 @@
+{
+  "music.crimson_forest": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nether:crimson",
+        "stream": false
+      }
+    ]
+  },
+  "music.pigstep": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nether:pigstep",
+        "stream": false
+      }
+    ]
+  },
+  "music.nether_waste": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nether:nether",
+        "stream": false
+      }
+    ]
+  },
+  "blocks.basalt.break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "nether:break1",
+        "stream": false
+      },
+      {
+        "name": "nether:break2",
+        "stream": false
+      },
+      {
+        "name": "nether:break3",
+        "stream": false
+      },
+      {
+        "name": "nether:break4",
+        "stream": false
+      },
+      {
+        "name": "nether:break5",
+        "stream": false
+      }
+    ]
+  },
+  "block.respawn_ancor.charge": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nether:charge1",
+        "stream": false
+      }
+    ]
+  },
+  "block.respawn_ancor.set_spawnpoint": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nether:set_spawn1",
+        "stream": false
+      }
+    ]
+  },
+  "mob.zoglin.step": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nether:step1",
+        "stream": false
+      },
+      {
+        "name": "nether:step2",
+        "stream": false
+      },
+      {
+        "name": "nether:step3",
+        "stream": false
+      },
+      {
+        "name": "nether:step4",
+        "stream": false
+      },
+      {
+        "name": "nether:step5",
+        "stream": false
+      }
+    ]
+  },
+  "mob.zoglin.hurt": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nether:hurt1",
+        "stream": false
+      },
+      {
+        "name": "nether:hurt2",
+        "stream": false
+      },
+      {
+        "name": "nether:hurt3",
+        "stream": false
+      }
+    ]
+  },
+  "mob.zoglin.death": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nether:death1",
+        "stream": false
+      },
+      {
+        "name": "nether:death2",
+        "stream": false
+      },
+      {
+        "name": "nether:death3",
+        "stream": false
+      }
+    ]
+  },
+  "mob.hoglin.ambient": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nether:idle1",
+        "stream": false
+      },
+      {
+        "name": "nether:idle10",
+        "stream": false
+      },
+      {
+        "name": "nether:idle11",
+        "stream": false
+      },
+      {
+        "name": "nether:idle2",
+        "stream": false
+      },
+      {
+        "name": "nether:idle3",
+        "stream": false
+      },
+      {
+        "name": "nether:idle4",
+        "stream": false
+      },
+      {
+        "name": "nether:idle5",
+        "stream": false
+      },
+      {
+        "name": "nether:idle6",
+        "stream": false
+      },
+      {
+        "name": "nether:idle7",
+        "stream": false
+      },
+      {
+        "name": "nether:idle8",
+        "stream": false
+      },
+      {
+        "name": "nether:idle9",
+        "stream": false
+      }
+    ]
+  },
+  "mob.hoglin.death": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nether:death1",
+        "stream": false
+      },
+      {
+        "name": "nether:death2",
+        "stream": false
+      },
+      {
+        "name": "nether:death3",
+        "stream": false
+      }
+    ]
+  },
+  "mob.hoglin.hurt": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nether:hurt1",
+        "stream": false
+      },
+      {
+        "name": "nether:hurt2",
+        "stream": false
+      },
+      {
+        "name": "nether:hurt3",
+        "stream": false
+      },
+      {
+        "name": "nether:hurt4",
+        "stream": false
+      }
+    ]
+  },
+  "mob.piglinbrute.death": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nether:death1",
+        "stream": false
+      },
+      {
+        "name": "nether:death2",
+        "stream": false
+      },
+      {
+        "name": "nether:death3",
+        "stream": false
+      }
+    ]
+  },
+  "mob.piglinbrute.hurt": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nether:hurt1",
+        "stream": false
+      },
+      {
+        "name": "nether:hurt2",
+        "stream": false
+      },
+      {
+        "name": "nether:hurt3",
+        "stream": false
+      },
+      {
+        "name": "nether:hurt4",
+        "stream": false
+      }
+    ]
+  },
+  "mob.piglinbrute.step": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nether:step1",
+        "stream": false
+      },
+      {
+        "name": "nether:step2",
+        "stream": false
+      },
+      {
+        "name": "nether:step3",
+        "stream": false
+      },
+      {
+        "name": "nether:step4",
+        "stream": false
+      },
+      {
+        "name": "nether:step5",
+        "stream": false
+      }
+    ]
+  },
+  "mob.piglinbrute.idle": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nether:idle1",
+        "stream": false
+      },
+      {
+        "name": "nether:idle2",
+        "stream": false
+      },
+      {
+        "name": "nether:idle3",
+        "stream": false
+      },
+      {
+        "name": "nether:idle4",
+        "stream": false
+      },
+      {
+        "name": "nether:idle5",
+        "stream": false
+      },
+      {
+        "name": "nether:idle6",
+        "stream": false
+      },
+      {
+        "name": "nether:idle7",
+        "stream": false
+      },
+      {
+        "name": "nether:idle8",
+        "stream": false
+      },
+      {
+        "name": "nether:idle9",
+        "stream": false
+      }
+    ]
+  },
+  "mob.piglin.death": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nether:death1",
+        "stream": false
+      },
+      {
+        "name": "nether:death2",
+        "stream": false
+      },
+      {
+        "name": "nether:death3",
+        "stream": false
+      },
+      {
+        "name": "nether:death4",
+        "stream": false
+      }
+    ]
+  },
+  "mob.piglin.hurt": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nether:hurt1",
+        "stream": false
+      },
+      {
+        "name": "nether:hurt2",
+        "stream": false
+      },
+      {
+        "name": "nether:hurt3",
+        "stream": false
+      }
+    ]
+  },
+  "mob.piglin.ambient": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nether:idle1",
+        "stream": false
+      },
+      {
+        "name": "nether:idle2",
+        "stream": false
+      },
+      {
+        "name": "nether:idle3",
+        "stream": false
+      },
+      {
+        "name": "nether:idle4",
+        "stream": false
+      },
+      {
+        "name": "nether:idle5",
+        "stream": false
+      }
+    ]
+  },
+  "mob.piglin.step": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nether:step1",
+        "stream": false
+      },
+      {
+        "name": "nether:step2",
+        "stream": false
+      },
+      {
+        "name": "nether:step3",
+        "stream": false
+      },
+      {
+        "name": "nether:step4",
+        "stream": false
+      },
+      {
+        "name": "nether:step5",
+        "stream": false
+      }
+    ]
+  }
+}

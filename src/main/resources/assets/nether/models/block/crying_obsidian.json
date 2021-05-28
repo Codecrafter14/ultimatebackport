@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "nether:blocks/crying_obsidian",
+    "up": "nether:blocks/respawn_anchor_bottom",
+    "north": "nether:blocks/crying_obsidian",
+    "east": "nether:blocks/crying_obsidian",
+    "south": "nether:blocks/crying_obsidian",
+    "west": "nether:blocks/crying_obsidian",
+    "particle": "nether:blocks/crying_obsidian"
+  }
+}

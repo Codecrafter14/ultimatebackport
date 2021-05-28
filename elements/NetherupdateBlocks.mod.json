@@ -1,0 +1,11 @@
+{
+  "_fv": 18,
+  "_type": "tab",
+  "definition": {
+    "name": "Netherupdate Mod",
+    "icon": {
+      "value": "CUSTOM:NewNetherRack"
+    },
+    "showSearch": false
+  }
+}

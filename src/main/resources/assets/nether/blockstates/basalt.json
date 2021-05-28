@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "normal": {
+      "model": "nether:basalt"
+    },
+    "facing=south": {
+      "model": "nether:basalt"
+    },
+    "facing=north": {
+      "model": "nether:basalt"
+    },
+    "facing=east": {
+      "model": "nether:basalt",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "nether:basalt",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "nether:basalt",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "nether:basalt",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

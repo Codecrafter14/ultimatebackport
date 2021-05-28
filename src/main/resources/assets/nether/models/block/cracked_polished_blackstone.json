@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "nether:blocks/cracked_polished_blackstone_bricks",
+    "up": "nether:blocks/cracked_polished_blackstone_bricks",
+    "north": "nether:blocks/cracked_polished_blackstone_bricks",
+    "east": "nether:blocks/cracked_polished_blackstone_bricks",
+    "south": "nether:blocks/cracked_polished_blackstone_bricks",
+    "west": "nether:blocks/cracked_polished_blackstone_bricks",
+    "particle": "nether:blocks/cracked_polished_blackstone_bricks"
+  }
+}

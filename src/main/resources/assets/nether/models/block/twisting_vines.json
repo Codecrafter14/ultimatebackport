@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "nether:blocks/twisting_vines_base",
+    "particle": "nether:blocks/twisting_vines_base"
+  }
+}

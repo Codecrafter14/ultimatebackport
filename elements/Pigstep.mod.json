@@ -1,0 +1,17 @@
+{
+  "_fv": 18,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "record_pigstep",
+    "name": "Pigstep",
+    "description": "Lena Raine",
+    "creativeTab": {
+      "value": "CUSTOM:NetherupdateBlocks"
+    },
+    "music": {
+      "value": "CUSTOM:music.pigstep"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

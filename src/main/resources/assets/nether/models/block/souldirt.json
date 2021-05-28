@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "nether:blocks/soul_soil",
+    "up": "nether:blocks/soul_soil",
+    "north": "nether:blocks/soul_soil",
+    "east": "nether:blocks/soul_soil",
+    "south": "nether:blocks/soul_soil",
+    "west": "nether:blocks/soul_soil",
+    "particle": "nether:blocks/soul_soil"
+  }
+}

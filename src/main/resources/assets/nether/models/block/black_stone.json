@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "nether:blocks/blackstone_top",
+    "up": "nether:blocks/blackstone_top",
+    "north": "nether:blocks/blackstone",
+    "east": "nether:blocks/blackstone",
+    "south": "nether:blocks/blackstone",
+    "west": "nether:blocks/blackstone",
+    "particle": "nether:blocks/blackstone_top"
+  }
+}

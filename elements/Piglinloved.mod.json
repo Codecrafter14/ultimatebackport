@@ -1,0 +1,41 @@
+{
+  "_fv": 18,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Blocks.GOLD_ORE"
+      },
+      {
+        "value": "Blocks.GOLD_BLOCK"
+      },
+      {
+        "value": "Items.GOLD_INGOT"
+      },
+      {
+        "value": "Items.GOLD_NUGGET"
+      },
+      {
+        "value": "Items.GOLDEN_HELMET"
+      },
+      {
+        "value": "Items.GOLDEN_CHESTPLATE"
+      },
+      {
+        "value": "Items.GOLDEN_LEGGINGS"
+      },
+      {
+        "value": "Items.GOLDEN_BOOTS"
+      },
+      {
+        "value": "Items.GOLDEN_APPLE#1"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "piglinloved",
+    "namespace": "forge"
+  }
+}

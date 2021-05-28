@@ -1,0 +1,40 @@
+{
+  "_fv": 18,
+  "_type": "structure",
+  "definition": {
+    "structure": "port",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 10000,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 1,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": 0,
+    "spawnXOffset": 0,
+    "spawnZOffset": 0,
+    "spawnWorldTypes": [
+      "Surface",
+      "CUSTOM:NetherNew",
+      "Nether"
+    ],
+    "restrictionBlocks": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:NetherBiome"
+      },
+      {
+        "value": "desert"
+      },
+      {
+        "value": "forest"
+      },
+      {
+        "value": "mountains"
+      },
+      {
+        "value": "plains"
+      }
+    ],
+    "ignoreBlocks": "STRUCTURE_BLOCK"
+  }
+}

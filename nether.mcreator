@@ -1,0 +1,1151 @@
+{
+  "id_map": {
+    "ENTITY": 12,
+    "DIMENSION": 1
+  },
+  "mod_elements": [
+    {
+      "name": "NewNetherRack",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "new_nether_rack"
+    },
+    {
+      "name": "NetherupdateBlocks",
+      "type": "tab",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netherupdate_blocks"
+    },
+    {
+      "name": "NetherNewPlayerEntersDimension",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nether_new_player_enters_dimension",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NetherNew",
+      "type": "dimension",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "1": 1
+      },
+      "registry_name": "nether_new",
+      "metadata": {
+        "ep": true
+      }
+    },
+    {
+      "name": "NetheriteIngot",
+      "type": "item",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netherite_ingot"
+    },
+    {
+      "name": "Locatebiome",
+      "type": "command",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "locatebiome"
+    },
+    {
+      "name": "Respawnancor",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "respawnancor"
+    },
+    {
+      "name": "NetheiteArmor",
+      "type": "armor",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netheite_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "Netheritepickaxe",
+      "type": "tool",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netheritepickaxe"
+    },
+    {
+      "name": "PickaxeCraft",
+      "type": "recipe",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pickaxe_craft"
+    },
+    {
+      "name": "WarpedFloor",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "warped_floor"
+    },
+    {
+      "name": "PiglinNormal",
+      "type": "mob",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 1,
+        "1": 2
+      },
+      "registry_name": "piglin_normal"
+    },
+    {
+      "name": "Piglinbrute",
+      "type": "mob",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 3,
+        "1": 4
+      },
+      "registry_name": "piglinbrute"
+    },
+    {
+      "name": "PiglinNormalRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "piglin_normal_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ZombiePiglin",
+      "type": "mob",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 5,
+        "1": 6
+      },
+      "registry_name": "zombie_piglin"
+    },
+    {
+      "name": "GoldNether",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gold_nether"
+    },
+    {
+      "name": "Goldore",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "goldore"
+    },
+    {
+      "name": "RespawnancorOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "respawnancor_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NetheriteHoeItemIsCraftedsmelted",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netherite_hoe_item_is_craftedsmelted",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Respawnancorcharged2OnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "respawnancorcharged_2_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Respawnancorcharged2",
+      "type": "block",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "respawnancorcharged_2"
+    },
+    {
+      "name": "Piglinloved",
+      "type": "tag",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "piglinloved"
+    },
+    {
+      "name": "NetheriteHoe",
+      "type": "tool",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netherite_hoe"
+    },
+    {
+      "name": "Hobby",
+      "type": "achievement",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hobby"
+    },
+    {
+      "name": "Strider",
+      "type": "mob",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 7,
+        "1": 8
+      },
+      "registry_name": "strider"
+    },
+    {
+      "name": "Zoglin",
+      "type": "mob",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 9,
+        "1": 10
+      },
+      "registry_name": "zoglin"
+    },
+    {
+      "name": "HoglinOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hoglin_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hoglin",
+      "type": "mob",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 11,
+        "1": 12
+      },
+      "registry_name": "hoglin"
+    },
+    {
+      "name": "Ancientdebris",
+      "type": "block",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ancientdebris"
+    },
+    {
+      "name": "Warpedforest",
+      "type": "biome",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "warpedforest"
+    },
+    {
+      "name": "CryingObsidian",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crying_obsidian"
+    },
+    {
+      "name": "PortalRuined1",
+      "type": "structure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "portal_ruined_1"
+    },
+    {
+      "name": "CryingLoot",
+      "type": "loottable",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crying_loot"
+    },
+    {
+      "name": "WarpedFungus",
+      "type": "plant",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "warped_fungus"
+    },
+    {
+      "name": "NetherBiome",
+      "type": "biome",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nether_biome"
+    },
+    {
+      "name": "Pigstep",
+      "type": "musicdisc",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pigstep"
+    },
+    {
+      "name": "CrimsonNylium",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_nylium"
+    },
+    {
+      "name": "Respawnancor3",
+      "type": "block",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "respawnancor_3"
+    },
+    {
+      "name": "Respawnancor3OnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "respawnancor_3_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NetheriteAxe",
+      "type": "tool",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netherite_axe"
+    },
+    {
+      "name": "WarpedNetherWart",
+      "type": "block",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "warped_nether_wart"
+    },
+    {
+      "name": "TwistingVines",
+      "type": "plant",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "twisting_vines"
+    },
+    {
+      "name": "NetheriteScrap",
+      "type": "item",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netherite_scrap"
+    },
+    {
+      "name": "AncientDebrisRecipe",
+      "type": "recipe",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ancient_debris_recipe"
+    },
+    {
+      "name": "CraftNetheriteIngot",
+      "type": "recipe",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "craft_netherite_ingot"
+    },
+    {
+      "name": "NetheriteSword",
+      "type": "tool",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netherite_sword"
+    },
+    {
+      "name": "Crimsonforest",
+      "type": "biome",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimsonforest"
+    },
+    {
+      "name": "BlackStone",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_stone"
+    },
+    {
+      "name": "Basalt",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "basalt"
+    },
+    {
+      "name": "BasaltDelta",
+      "type": "biome",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "basalt_delta"
+    },
+    {
+      "name": "Souldirt",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "souldirt"
+    },
+    {
+      "name": "SoulsandValley",
+      "type": "biome",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "soulsand_valley"
+    },
+    {
+      "name": "EnterNether",
+      "type": "achievement",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enter_nether"
+    },
+    {
+      "name": "NetheriteShovel",
+      "type": "tool",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netherite_shovel"
+    },
+    {
+      "name": "PolishedBlackstone",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_blackstone"
+    },
+    {
+      "name": "CrackedPolishedBlackstone",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cracked_polished_blackstone"
+    },
+    {
+      "name": "ChiseledBlackstone",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chiseled_blackstone"
+    },
+    {
+      "name": "PolishedBlackstoneBricks",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_blackstone_bricks"
+    },
+    {
+      "name": "NetheriteBlock",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netherite_block"
+    },
+    {
+      "name": "NetheriteBlockCraft",
+      "type": "recipe",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netherite_block_craft"
+    },
+    {
+      "name": "NetheriteBlockToIngot",
+      "type": "recipe",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netherite_block_to_ingot"
+    },
+    {
+      "name": "SlowFallingPotionStartedapplied",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "slow_falling_potion_startedapplied",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SlowFalling",
+      "type": "potion",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "slow_falling"
+    },
+    {
+      "name": "CrimsonLog",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_log"
+    },
+    {
+      "name": "CrimsonPlank",
+      "type": "block",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_plank"
+    },
+    {
+      "name": "CrimsonPlankToStick",
+      "type": "recipe",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_plank_to_stick"
+    },
+    {
+      "name": "LogToPlankCrimson",
+      "type": "recipe",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "log_to_plank_crimson"
+    },
+    {
+      "name": "CrimsonFuelLog",
+      "type": "fuel",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_fuel_log"
+    },
+    {
+      "name": "BlackstoneWall",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blackstone_wall"
+    },
+    {
+      "name": "Crimsonfance",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimsonfance"
+    },
+    {
+      "name": "CrimsonDoor",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_door"
+    },
+    {
+      "name": "CrimsonTrapDoor",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_trap_door"
+    },
+    {
+      "name": "ShroomLight",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shroom_light"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "music.crimson_forest",
+      "files": [
+        "crimson"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "music.pigstep",
+      "files": [
+        "pigstep"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "music.nether_waste",
+      "files": [
+        "nether"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "blocks.basalt.break",
+      "files": [
+        "break1",
+        "break2",
+        "break3",
+        "break4",
+        "break5"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "block.respawn_ancor.charge",
+      "files": [
+        "charge1"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "block.respawn_ancor.set_spawnpoint",
+      "files": [
+        "set_spawn1"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "mob.zoglin.step",
+      "files": [
+        "step1",
+        "step2",
+        "step3",
+        "step4",
+        "step5"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "mob.zoglin.hurt",
+      "files": [
+        "hurt1",
+        "hurt2",
+        "hurt3"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "mob.zoglin.death",
+      "files": [
+        "death1",
+        "death2",
+        "death3"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "mob.hoglin.ambient",
+      "files": [
+        "idle1",
+        "idle10",
+        "idle11",
+        "idle2",
+        "idle3",
+        "idle4",
+        "idle5",
+        "idle6",
+        "idle7",
+        "idle8",
+        "idle9"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "mob.hoglin.death",
+      "files": [
+        "death1",
+        "death2",
+        "death3"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "mob.hoglin.hurt",
+      "files": [
+        "hurt1",
+        "hurt2",
+        "hurt3",
+        "hurt4"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "mob.piglinbrute.death",
+      "files": [
+        "death1",
+        "death2",
+        "death3"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "mob.piglinbrute.hurt",
+      "files": [
+        "hurt1",
+        "hurt2",
+        "hurt3",
+        "hurt4"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "mob.piglinbrute.step",
+      "files": [
+        "step1",
+        "step2",
+        "step3",
+        "step4",
+        "step5"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "mob.piglinbrute.idle",
+      "files": [
+        "idle1",
+        "idle2",
+        "idle3",
+        "idle4",
+        "idle5",
+        "idle6",
+        "idle7",
+        "idle8",
+        "idle9"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "mob.piglin.death",
+      "files": [
+        "death1",
+        "death2",
+        "death3",
+        "death4"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "mob.piglin.hurt",
+      "files": [
+        "hurt1",
+        "hurt2",
+        "hurt3"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "mob.piglin.ambient",
+      "files": [
+        "idle1",
+        "idle2",
+        "idle3",
+        "idle4",
+        "idle5"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "mob.piglin.step",
+      "files": [
+        "step1",
+        "step2",
+        "step3",
+        "step4",
+        "step5"
+      ],
+      "category": "master",
+      "subtitle": ""
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "tile.basalt.name": "Basalt",
+      "tile.new_nether_rack.name": "New Nether Rack",
+      "tile.warped_nether_wart.name": "Warped Nether Wart Block",
+      "entity.piglin_normal.name": "Piglin",
+      "item.netherite_hoe.name": "Netherite Hoe",
+      "entity.strider.name": "Strider",
+      "tipped_arrow.effect.slow_falling": "Arrow of Slow Falling",
+      "tile.respawnancor_3.name": "Respawnancorcharged 2",
+      "item.netherite_shovel.name": "Netherite Shovel",
+      "potion.effect.slow_falling": "Slow Falling",
+      "entity.piglinbrute.name": "Piglin brute",
+      "subtitles.music.crimson_forest": "",
+      "itemGroup.tabnetherupdate_blocks": "Netherupdate Mod",
+      "subtitles.blocks.basalt.break": "",
+      "subtitles.mob.piglin.hurt": "",
+      "advancements.enter_nether.descr": "go to nether",
+      "subtitles.mob.hoglin.death": "",
+      "item.record.pigstep.desc": "Lena Raine",
+      "advancements.enter_nether.title": "we have to go deeper",
+      "advancements.hobby.descr": " Upgrade a diamond pickaxe to Netherite. Then think about your life choices.",
+      "item.netheite_armorhelmet.name": "Netheite Armor Helmet",
+      "subtitles.music.nether_waste": "",
+      "subtitles.mob.piglinbrute.hurt": "",
+      "item.netheite_armorbody.name": "Netheite Armor Body",
+      "item.netherite_sword.name": "Netherite Sword",
+      "tile.netherite_block.name": "Netherite Block",
+      "tile.respawnancor.name": "Respawn ancor",
+      "subtitles.mob.zoglin.step": "",
+      "entity.zoglin.name": "Zoglin",
+      "item.netheite_armorboots.name": "Netheite Armor Boots",
+      "tile.gold_nether.name": "Nether gold ore",
+      "tile.shroom_light.name": "Shroom Light",
+      "tile.cracked_polished_blackstone.name": "Cracked Polished Blackstone",
+      "tile.polished_blackstone_bricks.name": "Polished Blackstone Bricks",
+      "entity.zombie_piglin.name": "Zombie Piglin",
+      "subtitles.mob.piglin.ambient": "",
+      "lingering_potion.effect.slow_falling": "Lingering Slow Falling",
+      "subtitles.mob.zoglin.death": "",
+      "item.netherite_axe.name": "Netherite Axe",
+      "splash_potion.effect.slow_falling": "Splash Slow Falling",
+      "tile.blackstone_wall.name": "Blackstone Wall",
+      "subtitles.mob.piglinbrute.death": "",
+      "tile.warped_fungus.name": "Warped Fungus",
+      "subtitles.block.respawn_ancor.charge": "",
+      "subtitles.music.pigstep": "",
+      "tile.crying_obsidian.name": "Crying Obsidian",
+      "item.pigstep.name": "Pigstep",
+      "tile.chiseled_blackstone.name": "Chiseled Blackstone",
+      "tile.warped_floor.name": "Warped nylium",
+      "subtitles.mob.piglin.step": "",
+      "tile.crimson_log.name": "Crimson Log",
+      "tile.souldirt.name": "Souldirt",
+      "tile.crimsonfance.name": "Crimson fence",
+      "tile.crimson_door.name": "Crimson Door",
+      "subtitles.mob.hoglin.hurt": "",
+      "effect.slow_falling": "Slow Falling",
+      "tile.polished_blackstone.name": "Polished Blackstone",
+      "subtitles.block.respawn_ancor.set_spawnpoint": "",
+      "tile.crimson_nylium.name": "Crimson Nylium",
+      "tile.ancientdebris.name": "Ancientdebris",
+      "entity.hoglin.name": "Hoglin",
+      "item.netherite_scrap.name": "Netherite Scrap",
+      "subtitles.mob.piglinbrute.step": "",
+      "item.netheritepickaxe.name": "Netheritepickaxe",
+      "tile.crimson_trap_door.name": "Crimson Trap Door",
+      "tile.respawnancorcharged_2.name": "Respawnancorcharged 2",
+      "advancements.hobby.title": "My favourite Hobby",
+      "tile.twisting_vines.name": "Twisting Vines",
+      "subtitles.mob.hoglin.ambient": "",
+      "tile.crimson_plank.name": "Crimson Plank",
+      "tile.black_stone.name": "Black Stone",
+      "item.nether_new.name": "New Nether Portal Igniter",
+      "subtitles.mob.piglinbrute.idle": "",
+      "subtitles.mob.zoglin.hurt": "",
+      "item.netherite_ingot.name": "Netherite Ingot",
+      "item.netheite_armorlegs.name": "Netheite Armor Leggings",
+      "subtitles.mob.piglin.death": ""
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "vanilla",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "nether",
+    "modName": "nether",
+    "version": "2.0.3",
+    "author": "julian, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.12.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.nether",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100118117
+}

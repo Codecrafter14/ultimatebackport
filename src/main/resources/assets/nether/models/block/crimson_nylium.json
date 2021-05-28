@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "nether:blocks/netherrack",
+    "up": "nether:blocks/crimson_nylium_top",
+    "north": "nether:blocks/crimson_nylium_side",
+    "east": "nether:blocks/crimson_nylium_side",
+    "south": "nether:blocks/crimson_nylium_side",
+    "west": "nether:blocks/crimson_nylium_side",
+    "particle": "nether:blocks/netherrack"
+  }
+}

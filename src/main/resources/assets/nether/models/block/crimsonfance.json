@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "nether:blocks/crimson_planks",
+    "particle": "nether:blocks/crimson_planks"
+  }
+}

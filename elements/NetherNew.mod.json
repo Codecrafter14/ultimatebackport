@@ -1,0 +1,52 @@
+{
+  "_fv": 18,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:Warpedforest"
+      },
+      {
+        "value": "CUSTOM:Crimsonforest"
+      },
+      {
+        "value": "CUSTOM:BasaltDelta"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "CUSTOM:NewNetherRack"
+    },
+    "fluidBlock": {
+      "value": "Blocks.LAVA"
+    },
+    "airColor": {
+      "value": -52429,
+      "falpha": 0.0
+    },
+    "canRespawnHere": true,
+    "hasFog": false,
+    "isDark": false,
+    "doesWaterVaporize": true,
+    "sleepResult": "BED_EXPLODES",
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": false,
+    "portalFrame": {
+      "value": "CUSTOM:CryingObsidian"
+    },
+    "portalParticles": {
+      "value": "PORTAL"
+    },
+    "portalLuminance": 0,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "New Nether Portal Igniter",
+    "igniterTab": {
+      "value": "CUSTOM:NetherupdateBlocks"
+    },
+    "texture": "flint_and_steel",
+    "portalTexture": "portal2",
+    "enablePortal": true
+  }
+}

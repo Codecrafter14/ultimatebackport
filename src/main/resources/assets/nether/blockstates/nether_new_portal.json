@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "nether:nether_new_portal_ew"
+    },
+    "axis=x": {
+      "model": "nether:nether_new_portal_ns"
+    },
+    "inventory": {
+      "model": "nether:nether_new_portal_ns"
+    }
+  }
+}

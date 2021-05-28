@@ -1,0 +1,7 @@
+{
+  "parent": "block/trapdoor_open",
+  "textures": {
+    "texture": "nether:blocks/crimson_trapdoor",
+    "particle": "nether:blocks/crimson_trapdoor"
+  }
+}
