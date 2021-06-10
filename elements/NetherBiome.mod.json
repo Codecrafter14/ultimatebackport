@@ -42,7 +42,9 @@
     "biomeType": "WARM",
     "spawnBiome": false,
     "biomeWeight": 10,
-    "biomeDictionaryTypes": [],
+    "biomeDictionaryTypes": [
+      "NETHER"
+    ],
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,

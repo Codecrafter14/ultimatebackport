@@ -27,18 +27,20 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "NONE",
+    "biomeCategory": "NETHER",
     "parent": {
-      "value": "No parent"
+      "value": "nether"
     },
     "rainingPossibility": 0.5,
     "temperature": 0.5,
     "baseHeight": 0.1,
     "heightVariation": 0.2,
     "biomeType": "WARM",
-    "spawnBiome": true,
-    "biomeWeight": 10,
-    "biomeDictionaryTypes": [],
+    "spawnBiome": false,
+    "biomeWeight": 16,
+    "biomeDictionaryTypes": [
+      "NETHER"
+    ],
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,

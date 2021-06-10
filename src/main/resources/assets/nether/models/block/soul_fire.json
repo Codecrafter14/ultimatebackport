@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "nether:blocks/tranp",
+    "up": "nether:blocks/tranp",
+    "north": "nether:blocks/soul_fire_0",
+    "east": "nether:blocks/soul_fire_0",
+    "south": "nether:blocks/soul_fire_1",
+    "west": "nether:blocks/soul_fire_1",
+    "particle": "nether:blocks/tranp"
+  }
+}

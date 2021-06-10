@@ -63,7 +63,7 @@
     "ridable": false,
     "canControlForward": false,
     "canControlStrafe": false,
-    "immuneToFire": false,
+    "immuneToFire": true,
     "immuneToArrows": false,
     "immuneToFallDamage": false,
     "immuneToCactus": false,
@@ -77,7 +77,7 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": ""
+      "value": "Items.PORKCHOP"
     },
     "livingSound": {
       "value": "CUSTOM:mob.hoglin.ambient"

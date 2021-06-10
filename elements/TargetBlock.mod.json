@@ -2,15 +2,15 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "warped_stem_top",
-    "textureTop": "warped_stem_top",
-    "textureLeft": "warpedlog",
-    "textureFront": "warpedlog",
-    "textureRight": "warpedlog",
-    "textureBack": "warpedlog",
+    "texture": "target_side",
+    "textureTop": "target_side",
+    "textureLeft": "target_top",
+    "textureFront": "target_top",
+    "textureRight": "target_top",
+    "textureBack": "target_top",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 5,
+    "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "Warped Log",
+    "name": "Target Block",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -52,7 +52,7 @@
     "canProvidePower": false,
     "lightOpacity": 255,
     "material": {
-      "value": "WOOD"
+      "value": "LEAVES"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -72,7 +72,7 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "WOOD"
+      "value": "PLANT"
     },
     "luminance": 0,
     "unbreakable": false,

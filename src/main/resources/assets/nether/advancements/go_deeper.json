@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "nether:new_nether_rack"
+    },
+    "title": {
+      "translate": "advancements.go_deeper.title"
+    },
+    "description": {
+      "translate": "advancements.go_deeper.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "go_deeper": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "nether:nether_new"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "nether:hobby"
+}

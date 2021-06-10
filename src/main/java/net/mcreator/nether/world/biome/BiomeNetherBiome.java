@@ -5,6 +5,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.common.BiomeDictionary;
 
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraft.world.biome.Biome;
@@ -31,6 +32,7 @@ public class BiomeNetherBiome extends ElementsNetherMod.ModElement {
 
 	@Override
 	public void init(FMLInitializationEvent event) {
+		BiomeDictionary.addTypes(biome, BiomeDictionary.Type.NETHER);
 	}
 	static class BiomeGenCustom extends Biome {
 		public BiomeGenCustom() {

@@ -3,7 +3,7 @@ package net.mcreator.nether.world.biome;
 
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.common.BiomeManager;
+import net.minecraftforge.common.BiomeDictionary;
 
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraft.world.biome.Biome;
@@ -30,8 +30,7 @@ public class BiomeSoulsandValley extends ElementsNetherMod.ModElement {
 
 	@Override
 	public void init(FMLInitializationEvent event) {
-		BiomeManager.addSpawnBiome(biome);
-		BiomeManager.addBiome(BiomeManager.BiomeType.WARM, new BiomeManager.BiomeEntry(biome, 10));
+		BiomeDictionary.addTypes(biome, BiomeDictionary.Type.NETHER);
 	}
 	static class BiomeGenCustom extends Biome {
 		public BiomeGenCustom() {

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "nether:blocks/target_side",
+    "up": "nether:blocks/target_side",
+    "north": "nether:blocks/target_top",
+    "east": "nether:blocks/target_top",
+    "south": "nether:blocks/target_top",
+    "west": "nether:blocks/target_top",
+    "particle": "nether:blocks/target_side"
+  }
+}

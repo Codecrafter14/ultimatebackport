@@ -32,7 +32,7 @@
     "hasSkyLight": false,
     "imitateOverworldBehaviour": false,
     "portalFrame": {
-      "value": "CUSTOM:CryingObsidian"
+      "value": "Blocks.OBSIDIAN"
     },
     "portalParticles": {
       "value": "PORTAL"

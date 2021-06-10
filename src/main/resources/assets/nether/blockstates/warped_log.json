@@ -2,6 +2,30 @@
   "variants": {
     "normal": {
       "model": "nether:warped_log"
+    },
+    "facing=south": {
+      "model": "nether:warped_log"
+    },
+    "facing=north": {
+      "model": "nether:warped_log"
+    },
+    "facing=east": {
+      "model": "nether:warped_log",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "nether:warped_log",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "nether:warped_log",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "nether:warped_log",
+      "x": 90,
+      "y": 90
     }
   }
 }

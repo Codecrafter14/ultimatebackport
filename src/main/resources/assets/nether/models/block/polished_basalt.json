@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "nether:blocks/polished_basalt_top",
+    "up": "nether:blocks/polished_basalt_top",
+    "north": "nether:blocks/polished_basalt_side",
+    "east": "nether:blocks/polished_basalt_side",
+    "south": "nether:blocks/polished_basalt_side",
+    "west": "nether:blocks/polished_basalt_side",
+    "particle": "nether:blocks/polished_basalt_top"
+  }
+}

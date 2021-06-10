@@ -1,0 +1,25 @@
+{
+  "_fv": 18,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Who is cutting onions?",
+    "achievementDescription": "Obtain crying obsidian",
+    "achievementIcon": {
+      "value": "CUSTOM:CryingObsidian"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 1,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:Hobby"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"block_placed\" x=\"50\" y=\"28\"><value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\">CUSTOM:CryingObsidian</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

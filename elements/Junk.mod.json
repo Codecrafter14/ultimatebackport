@@ -2,7 +2,7 @@
   "_fv": 18,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Cover yourself in junk!",
+    "achievementName": "Cover yourself in debris!",
     "achievementDescription": "Wear full Netherite armor.",
     "achievementIcon": {
       "value": "CUSTOM:NetheiteArmor.body"

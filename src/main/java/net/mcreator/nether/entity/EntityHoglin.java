@@ -13,7 +13,9 @@ import net.minecraft.world.biome.Biome;
 import net.minecraft.world.World;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
+import net.minecraft.init.Items;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.entity.ai.EntityAIWander;
@@ -82,7 +84,7 @@ public class EntityHoglin extends ElementsNetherMod.ModElement {
 			super(world);
 			setSize(0.6f, 1.8f);
 			experienceValue = 0;
-			this.isImmuneToFire = false;
+			this.isImmuneToFire = true;
 			setNoAI(!true);
 		}
 
@@ -104,7 +106,7 @@ public class EntityHoglin extends ElementsNetherMod.ModElement {
 
 		@Override
 		protected Item getDropItem() {
-			return null;
+			return new ItemStack(Items.PORKCHOP, (int) (1)).getItem();
 		}
 
 		@Override

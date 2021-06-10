@@ -38,7 +38,9 @@
     "biomeType": "DESERT",
     "spawnBiome": false,
     "biomeWeight": 10,
-    "biomeDictionaryTypes": [],
+    "biomeDictionaryTypes": [
+      "NETHER"
+    ],
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,
@@ -60,7 +62,7 @@
       "value": "Blocks.NETHER_WART_BLOCK"
     },
     "treeVines": {
-      "value": "CUSTOM:WeepingVines"
+      "value": "Blocks.AIR"
     },
     "treeFruits": {
       "value": "CUSTOM:ShroomLight"

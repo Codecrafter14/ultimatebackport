@@ -3,13 +3,14 @@ package net.mcreator.nether.world.biome;
 
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.common.BiomeManager;
+import net.minecraftforge.common.BiomeDictionary;
 
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.EnumFacing;
+import net.minecraft.init.Blocks;
 import net.minecraft.entity.monster.EntityEnderman;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.material.Material;
@@ -19,7 +20,6 @@ import net.mcreator.nether.entity.EntityStrider;
 import net.mcreator.nether.block.BlockWarpedNetherWart;
 import net.mcreator.nether.block.BlockWarpedFloor;
 import net.mcreator.nether.block.BlockWapredLog;
-import net.mcreator.nether.block.BlockTwistingVines;
 import net.mcreator.nether.block.BlockShroomLight;
 import net.mcreator.nether.block.BlockNewNetherRack;
 import net.mcreator.nether.ElementsNetherMod;
@@ -41,8 +41,7 @@ public class BiomeWarpedforest extends ElementsNetherMod.ModElement {
 
 	@Override
 	public void init(FMLInitializationEvent event) {
-		BiomeManager.addSpawnBiome(biome);
-		BiomeManager.addBiome(BiomeManager.BiomeType.WARM, new BiomeManager.BiomeEntry(biome, 10));
+		BiomeDictionary.addTypes(biome, BiomeDictionary.Type.NETHER);
 	}
 	static class BiomeGenCustom extends Biome {
 		public BiomeGenCustom() {
@@ -63,7 +62,7 @@ public class BiomeWarpedforest extends ElementsNetherMod.ModElement {
 			this.spawnableCreatureList.clear();
 			this.spawnableWaterCreatureList.clear();
 			this.spawnableCaveCreatureList.clear();
-			this.spawnableCreatureList.add(new SpawnListEntry(EntityEnderman.class, 20, 1, 10));
+			this.spawnableCreatureList.add(new SpawnListEntry(EntityEnderman.class, 20, 4, 10));
 			this.spawnableCreatureList.add(new SpawnListEntry(EntityStrider.EntityCustom.class, 20, 1, 4));
 		}
 
@@ -124,7 +123,7 @@ public class BiomeWarpedforest extends ElementsNetherMod.ModElement {
 										BlockPos blockpos = new BlockPos(k1, genh, i2);
 										state = world.getBlockState(blockpos);
 										if (state.getBlock().isAir(state, world, blockpos) || state.getBlock().isLeaves(state, world, blockpos)
-												|| state.getBlock() == BlockTwistingVines.block.getDefaultState().getBlock()
+												|| state.getBlock() == Blocks.AIR.getDefaultState().getBlock()
 												|| state.getBlock() == BlockWarpedNetherWart.block.getDefaultState().getBlock()) {
 											this.setBlockAndNotifyAdequately(world, blockpos, BlockWarpedNetherWart.block.getDefaultState());
 										}
@@ -135,21 +134,18 @@ public class BiomeWarpedforest extends ElementsNetherMod.ModElement {
 						for (int genh = 0; genh < height; genh++) {
 							BlockPos genhPos = position.up(genh);
 							state = world.getBlockState(genhPos);
-							if (state.getBlock().isAir(state, world, genhPos)
-									|| state.getBlock() == BlockTwistingVines.block.getDefaultState().getBlock()
+							if (state.getBlock().isAir(state, world, genhPos) || state.getBlock() == Blocks.AIR.getDefaultState().getBlock()
 									|| state.getBlock() == BlockWarpedNetherWart.block.getDefaultState().getBlock()) {
 								this.setBlockAndNotifyAdequately(world, position.up(genh), BlockWapredLog.block.getDefaultState());
 								if (genh > 0) {
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(-1, genh, 0)))
-										this.setBlockAndNotifyAdequately(world, position.add(-1, genh, 0),
-												BlockTwistingVines.block.getDefaultState());
+										this.setBlockAndNotifyAdequately(world, position.add(-1, genh, 0), Blocks.AIR.getDefaultState());
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(1, genh, 0)))
-										this.setBlockAndNotifyAdequately(world, position.add(1, genh, 0), BlockTwistingVines.block.getDefaultState());
+										this.setBlockAndNotifyAdequately(world, position.add(1, genh, 0), Blocks.AIR.getDefaultState());
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(0, genh, -1)))
-										this.setBlockAndNotifyAdequately(world, position.add(0, genh, -1),
-												BlockTwistingVines.block.getDefaultState());
+										this.setBlockAndNotifyAdequately(world, position.add(0, genh, -1), Blocks.AIR.getDefaultState());
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(0, genh, 1)))
-										this.setBlockAndNotifyAdequately(world, position.add(0, genh, 1), BlockTwistingVines.block.getDefaultState());
+										this.setBlockAndNotifyAdequately(world, position.add(0, genh, 1), Blocks.AIR.getDefaultState());
 								}
 							}
 						}
@@ -200,10 +196,10 @@ public class BiomeWarpedforest extends ElementsNetherMod.ModElement {
 		}
 
 		private void addVines(World world, BlockPos pos) {
-			this.setBlockAndNotifyAdequately(world, pos, BlockTwistingVines.block.getDefaultState());
+			this.setBlockAndNotifyAdequately(world, pos, Blocks.AIR.getDefaultState());
 			int i = 5;
 			for (BlockPos blockpos = pos.down(); world.isAirBlock(blockpos) && i > 0; --i) {
-				this.setBlockAndNotifyAdequately(world, blockpos, BlockTwistingVines.block.getDefaultState());
+				this.setBlockAndNotifyAdequately(world, blockpos, Blocks.AIR.getDefaultState());
 				blockpos = blockpos.down();
 			}
 		}

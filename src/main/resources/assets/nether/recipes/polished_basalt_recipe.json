@@ -1,0 +1,26 @@
+{
+  "group": "nether",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "nether:basalt"
+    },
+    "1": {
+      "item": "nether:basalt"
+    },
+    "2": {
+      "item": "nether:basalt"
+    },
+    "3": {
+      "item": "nether:basalt"
+    }
+  },
+  "result": {
+    "item": "nether:polished_basalt",
+    "count": 4
+  }
+}

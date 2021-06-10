@@ -1,0 +1,46 @@
+{
+  "_fv": 18,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 4,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Basalt"
+      },
+      {
+        "value": "CUSTOM:Basalt"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Basalt"
+      },
+      {
+        "value": "CUSTOM:Basalt"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PolishedBasalt"
+    },
+    "name": "polished_basalt_recipe",
+    "namespace": "mod"
+  }
+}

@@ -65,7 +65,6 @@ import net.minecraft.block.Block;
 
 import net.mcreator.nether.item.ItemNetherNew;
 import net.mcreator.nether.block.BlockNewNetherRack;
-import net.mcreator.nether.block.BlockCryingObsidian;
 import net.mcreator.nether.ElementsNetherMod;
 
 import javax.annotation.Nullable;
@@ -311,7 +310,7 @@ public class WorldNetherNew extends ElementsNetherMod.ModElement {
 							int k11 = k6 + (l7 - 1) * i3 - j7 * l6;
 							boolean flag = k8 < 0;
 							this.world.setBlockState(new BlockPos(k9, k10, k11),
-									flag ? BlockCryingObsidian.block.getDefaultState().getBlock().getDefaultState() : Blocks.AIR.getDefaultState());
+									flag ? Blocks.OBSIDIAN.getDefaultState().getBlock().getDefaultState() : Blocks.AIR.getDefaultState());
 						}
 					}
 				}
@@ -325,7 +324,7 @@ public class WorldNetherNew extends ElementsNetherMod.ModElement {
 						int k12 = k6 + (l8 - 1) * i3;
 						boolean flag1 = l8 == 0 || l8 == 3 || l9 == -1 || l9 == 3;
 						this.world.setBlockState(new BlockPos(l10, l11, k12),
-								flag1 ? BlockCryingObsidian.block.getDefaultState().getBlock().getDefaultState() : iblockstate, 2);
+								flag1 ? Blocks.OBSIDIAN.getDefaultState().getBlock().getDefaultState() : iblockstate, 2);
 					}
 				}
 				for (int i9 = 0; i9 < 4; ++i9) {
@@ -362,7 +361,7 @@ public class WorldNetherNew extends ElementsNetherMod.ModElement {
 							int k2 = k + k1 * 0 - j1 * 1;
 							boolean flag = l1 < 0;
 							this.world.setBlockState(new BlockPos(i2, j2, k2),
-									flag ? BlockCryingObsidian.block.getDefaultState().getBlock().getDefaultState() : Blocks.AIR.getDefaultState());
+									flag ? Blocks.OBSIDIAN.getDefaultState().getBlock().getDefaultState() : Blocks.AIR.getDefaultState());
 						}
 					}
 				}
@@ -652,12 +651,12 @@ public class WorldNetherNew extends ElementsNetherMod.ModElement {
 				for (i = 0; i < 22; ++i) {
 					BlockPos blockpos = p_180120_1_.offset(p_180120_2_, i);
 					if (!this.isEmptyBlock(this.world.getBlockState(blockpos).getBlock())
-							|| this.world.getBlockState(blockpos.down()).getBlock() != BlockCryingObsidian.block.getDefaultState().getBlock()) {
+							|| this.world.getBlockState(blockpos.down()).getBlock() != Blocks.OBSIDIAN.getDefaultState().getBlock()) {
 						break;
 					}
 				}
 				Block block = this.world.getBlockState(p_180120_1_.offset(p_180120_2_, i)).getBlock();
-				return block == BlockCryingObsidian.block.getDefaultState().getBlock() ? i : 0;
+				return block == Blocks.OBSIDIAN.getDefaultState().getBlock() ? i : 0;
 			}
 
 			public int getHeight() {
@@ -681,19 +680,19 @@ public class WorldNetherNew extends ElementsNetherMod.ModElement {
 						}
 						if (i == 0) {
 							block = this.world.getBlockState(blockpos.offset(this.leftDir)).getBlock();
-							if (block != BlockCryingObsidian.block.getDefaultState().getBlock()) {
+							if (block != Blocks.OBSIDIAN.getDefaultState().getBlock()) {
 								break label56;
 							}
 						} else if (i == this.width - 1) {
 							block = this.world.getBlockState(blockpos.offset(this.rightDir)).getBlock();
-							if (block != BlockCryingObsidian.block.getDefaultState().getBlock()) {
+							if (block != Blocks.OBSIDIAN.getDefaultState().getBlock()) {
 								break label56;
 							}
 						}
 					}
 				}
 				for (int j = 0; j < this.width; ++j) {
-					if (this.world.getBlockState(this.bottomLeft.offset(this.rightDir, j).up(this.height)).getBlock() != BlockCryingObsidian.block
+					if (this.world.getBlockState(this.bottomLeft.offset(this.rightDir, j).up(this.height)).getBlock() != Blocks.OBSIDIAN
 							.getDefaultState().getBlock()) {
 						this.height = 0;
 						break;

@@ -2,15 +2,15 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "warped_stem_top",
-    "textureTop": "warped_stem_top",
-    "textureLeft": "warpedlog",
-    "textureFront": "warpedlog",
-    "textureRight": "warpedlog",
-    "textureBack": "warpedlog",
+    "texture": "tranp",
+    "textureTop": "tranp",
+    "textureLeft": "soul_fire_0",
+    "textureFront": "soul_fire_0",
+    "textureRight": "soul_fire_1",
+    "textureBack": "soul_fire_1",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 5,
+    "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
@@ -32,27 +32,27 @@
         "subtract": false
       }
     ],
-    "name": "Warped Log",
+    "name": "Soul Fire",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:NetherupdateBlocks"
+      "value": "No creative tab entry"
     },
     "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
     },
-    "dropAmount": 1,
+    "dropAmount": 0,
     "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canProvidePower": false,
     "lightOpacity": 255,
     "material": {
-      "value": "WOOD"
+      "value": "FIRE"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -72,7 +72,7 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "WOOD"
+      "value": "CLOTH"
     },
     "luminance": 0,
     "unbreakable": false,
