@@ -1,6 +1,8 @@
 
 package net.mcreator.nether.world.biome;
 
+import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.common.BiomeDictionary;
@@ -46,12 +48,18 @@ public class BiomeSoulsandValley extends ElementsNetherMod.ModElement {
 			decorator.reedsPerChunk = 0;
 			decorator.cactiPerChunk = 0;
 			decorator.sandPatchesPerChunk = 0;
-			decorator.gravelPatchesPerChunk = 0;
+			decorator.gravelPatchesPerChunk = 1;
 			this.spawnableMonsterList.clear();
 			this.spawnableCreatureList.clear();
 			this.spawnableWaterCreatureList.clear();
 			this.spawnableCaveCreatureList.clear();
 			this.spawnableCreatureList.add(new SpawnListEntry(EntitySkeleton.class, 20, 4, 4));
+		}
+
+		@SideOnly(Side.CLIENT)
+		@Override
+		public int getSkyColorByTemp(float currentTemperature) {
+			return -16737844;
 		}
 
 		@Override

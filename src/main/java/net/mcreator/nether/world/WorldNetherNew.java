@@ -155,7 +155,7 @@ public class WorldNetherNew extends ElementsNetherMod.ModElement {
 
 		@Override
 		public boolean canRespawnHere() {
-			return true;
+			return false;
 		}
 
 		@SideOnly(Side.CLIENT)

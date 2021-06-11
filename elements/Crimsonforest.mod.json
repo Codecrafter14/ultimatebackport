@@ -9,6 +9,14 @@
     "undergroundBlock": {
       "value": "CUSTOM:NewNetherRack"
     },
+    "airColor": {
+      "value": -39322,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -26215,
+      "falpha": 0.0
+    },
     "ambientSound": {
       "value": ""
     },

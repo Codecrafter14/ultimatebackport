@@ -1,6 +1,8 @@
 
 package net.mcreator.nether.world.biome;
 
+import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.common.BiomeDictionary;
@@ -61,6 +63,12 @@ public class BiomeCrimsonforest extends ElementsNetherMod.ModElement {
 			this.spawnableWaterCreatureList.clear();
 			this.spawnableCaveCreatureList.clear();
 			this.spawnableCreatureList.add(new SpawnListEntry(EntityPiglinNormal.EntityCustom.class, 20, 4, 4));
+		}
+
+		@SideOnly(Side.CLIENT)
+		@Override
+		public int getSkyColorByTemp(float currentTemperature) {
+			return -39322;
 		}
 
 		@Override

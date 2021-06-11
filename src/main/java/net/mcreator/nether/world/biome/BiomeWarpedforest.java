@@ -1,6 +1,8 @@
 
 package net.mcreator.nether.world.biome;
 
+import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.common.BiomeDictionary;
@@ -64,6 +66,24 @@ public class BiomeWarpedforest extends ElementsNetherMod.ModElement {
 			this.spawnableCaveCreatureList.clear();
 			this.spawnableCreatureList.add(new SpawnListEntry(EntityEnderman.class, 20, 4, 10));
 			this.spawnableCreatureList.add(new SpawnListEntry(EntityStrider.EntityCustom.class, 20, 1, 4));
+		}
+
+		@SideOnly(Side.CLIENT)
+		@Override
+		public int getGrassColorAtPos(BlockPos pos) {
+			return -6697984;
+		}
+
+		@SideOnly(Side.CLIENT)
+		@Override
+		public int getFoliageColorAtPos(BlockPos pos) {
+			return -6697984;
+		}
+
+		@SideOnly(Side.CLIENT)
+		@Override
+		public int getSkyColorByTemp(float currentTemperature) {
+			return -16737895;
 		}
 
 		@Override
