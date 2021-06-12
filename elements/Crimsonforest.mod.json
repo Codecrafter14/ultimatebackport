@@ -35,9 +35,9 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "NONE",
+    "biomeCategory": "NETHER",
     "parent": {
-      "value": "No parent"
+      "value": "nether"
     },
     "rainingPossibility": 0.0,
     "temperature": 0.5,

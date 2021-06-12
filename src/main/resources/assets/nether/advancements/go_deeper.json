@@ -16,10 +16,7 @@
   },
   "criteria": {
     "go_deeper": {
-      "trigger": "minecraft:changed_dimension",
-      "conditions": {
-        "to": "nether:nether_new"
-      }
+      "trigger": "minecraft:impossible"
     }
   },
   "rewards": {

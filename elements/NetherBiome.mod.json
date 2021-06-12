@@ -33,7 +33,7 @@
     "particlesProbability": 0.5,
     "biomeCategory": "NETHER",
     "parent": {
-      "value": "No parent"
+      "value": "nether"
     },
     "rainingPossibility": 0.5,
     "temperature": 0.5,

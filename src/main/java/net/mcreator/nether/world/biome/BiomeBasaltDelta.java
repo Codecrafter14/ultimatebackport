@@ -48,7 +48,7 @@ public class BiomeBasaltDelta extends ElementsNetherMod.ModElement {
 			setRegistryName("basalt_delta");
 			topBlock = BlockBasalt.block.getDefaultState();
 			fillerBlock = BlockBlackStone.block.getDefaultState();
-			decorator.treesPerChunk = 7;
+			decorator.treesPerChunk = 9;
 			decorator.flowersPerChunk = 0;
 			decorator.grassPerChunk = 0;
 			decorator.mushroomsPerChunk = 0;

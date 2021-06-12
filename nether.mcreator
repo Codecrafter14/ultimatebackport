@@ -1,8 +1,8 @@
 {
   "id_map": {
-    "ENTITY": 14,
     "GUI": 1,
-    "DIMENSION": 1
+    "DIMENSION": 1,
+    "ENTITY": 14
   },
   "mod_elements": [
     {
@@ -1479,16 +1479,16 @@
       "subtitles.block.basalt.break": "",
       "tipped_arrow.effect.slow_falling": "Arrow of Slow Falling",
       "tile.respawnancor_3.name": "Respawnancorcharged 2",
-      "advancements.junk.title": "Cover yourself in debris!",
       "item.netherite_shovel.name": "Netherite Shovel",
+      "advancements.junk.title": "Cover yourself in debris!",
       "subtitles.music.crimson_forest": "",
       "advancements.cute.title": "Oh, how cute!",
       "itemGroup.tabnetherupdate_blocks": "Netherupdate Mod",
       "advancements.onions.title": "Who is cutting onions?",
       "subtitles.mob.piglin.hurt": "",
       "tile.warped_fence.name": "Warped Fence",
-      "item.record.pigstep.desc": "Lena Raine",
       "advancements.enter_nether.title": "we have to go deeper",
+      "item.record.pigstep.desc": "Lena Raine",
       "advancements.hobby.descr": " Upgrade a diamond pickaxe to Netherite. Then think about your life choices.",
       "item.netheite_armorhelmet.name": "Netheite Armor Helmet",
       "subtitles.mob.piglinbrute.hurt": "",
@@ -1552,7 +1552,7 @@
       "tile.warped_fungus.name": "Warped Fungus",
       "tile.chiseled_blackstone.name": "Chiseled Blackstone",
       "tile.warped_floor.name": "Warped nylium",
-      "tile.souldirt.name": "Souldirt",
+      "tile.souldirt.name": "Soul soil",
       "tile.crimson_door.name": "Crimson Door",
       "subtitles.mob.hoglin.hurt": "",
       "effect.slow_falling": "Slow Falling",
@@ -1588,7 +1588,7 @@
   "workspaceSettings": {
     "modid": "nether",
     "modName": "nether",
-    "version": "2.0.3",
+    "version": "2.4.7",
     "author": "julian, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",

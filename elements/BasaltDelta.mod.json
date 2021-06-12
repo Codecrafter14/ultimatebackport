@@ -58,7 +58,7 @@
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 7,
+    "treesPerChunk": 9,
     "vanillaTreeType": "Default",
     "treeType": 1,
     "minHeight": 3,
@@ -86,11 +86,7 @@
     "spawnOceanMonument": false,
     "spawnShipwreck": false,
     "oceanRuinType": "NONE",
-    "defaultFeatures": [
-      "Caves",
-      "Ores",
-      "FrozenTopLayer"
-    ],
+    "defaultFeatures": [],
     "spawnEntries": [
       {
         "entity": {
