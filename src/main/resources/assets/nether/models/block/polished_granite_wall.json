@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_side",
+  "textures": {
+    "wall": "nether:blocks/stone_granite_smooth",
+    "particle": "nether:blocks/stone_granite_smooth"
+  }
+}

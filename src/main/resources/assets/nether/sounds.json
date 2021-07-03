@@ -456,5 +456,198 @@
         "stream": false
       }
     ]
+  },
+  "block.barrel.open": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "nether:open1",
+        "stream": false
+      },
+      {
+        "name": "nether:open2",
+        "stream": false
+      }
+    ]
+  },
+  "smithing_table": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nether:smithing_table1",
+        "stream": false
+      },
+      {
+        "name": "nether:smithing_table2",
+        "stream": false
+      },
+      {
+        "name": "nether:smithing_table3",
+        "stream": false
+      }
+    ]
+  },
+  "block.chain.destroy": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nether:break1",
+        "stream": false
+      },
+      {
+        "name": "nether:break2",
+        "stream": false
+      },
+      {
+        "name": "nether:break3",
+        "stream": false
+      },
+      {
+        "name": "nether:break4",
+        "stream": false
+      }
+    ]
+  },
+  "block.chain.break": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "nether:break1",
+        "stream": false
+      },
+      {
+        "name": "nether:break2",
+        "stream": false
+      },
+      {
+        "name": "nether:break3",
+        "stream": false
+      },
+      {
+        "name": "nether:break4",
+        "stream": false
+      }
+    ]
+  },
+  "block.warpedfloor": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "nether:break1",
+        "stream": false
+      },
+      {
+        "name": "nether:break2",
+        "stream": false
+      },
+      {
+        "name": "nether:break3",
+        "stream": false
+      },
+      {
+        "name": "nether:break4",
+        "stream": false
+      },
+      {
+        "name": "nether:break5",
+        "stream": false
+      },
+      {
+        "name": "nether:break6",
+        "stream": false
+      }
+    ]
+  },
+  "nylium": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nether:break1",
+        "stream": false
+      },
+      {
+        "name": "nether:break2",
+        "stream": false
+      },
+      {
+        "name": "nether:break3",
+        "stream": false
+      },
+      {
+        "name": "nether:break4",
+        "stream": false
+      },
+      {
+        "name": "nether:break5",
+        "stream": false
+      },
+      {
+        "name": "nether:break6",
+        "stream": false
+      }
+    ]
+  },
+  "netherrack": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nether:break1",
+        "stream": false
+      },
+      {
+        "name": "nether:break2",
+        "stream": false
+      },
+      {
+        "name": "nether:break3",
+        "stream": false
+      },
+      {
+        "name": "nether:break4",
+        "stream": false
+      },
+      {
+        "name": "nether:break5",
+        "stream": false
+      },
+      {
+        "name": "nether:break6",
+        "stream": false
+      }
+    ]
+  },
+  "ancientdebris": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nether:break1",
+        "stream": false
+      },
+      {
+        "name": "nether:break2",
+        "stream": false
+      },
+      {
+        "name": "nether:break3",
+        "stream": false
+      },
+      {
+        "name": "nether:break4",
+        "stream": false
+      },
+      {
+        "name": "nether:break5",
+        "stream": false
+      }
+    ]
+  },
+  "basalt.ambience": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "nether:basalt_soulsandvalley",
+        "stream": false
+      }
+    ]
   }
 }

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "nether:blocks/quartz_block_top",
+    "up": "nether:blocks/quartz_block_top",
+    "north": "nether:blocks/quartz_block_top",
+    "east": "nether:blocks/quartz_block_top",
+    "south": "nether:blocks/quartz_block_top",
+    "west": "nether:blocks/quartz_block_top",
+    "particle": "nether:blocks/quartz_block_top"
+  }
+}

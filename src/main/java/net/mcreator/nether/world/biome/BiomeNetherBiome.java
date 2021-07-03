@@ -9,6 +9,7 @@ import net.minecraftforge.common.BiomeDictionary;
 
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.entity.monster.EntityGhast;
 
 import net.mcreator.nether.entity.EntityZombiePiglin;
 import net.mcreator.nether.entity.EntityPiglinNormal;
@@ -36,7 +37,8 @@ public class BiomeNetherBiome extends ElementsNetherMod.ModElement {
 	}
 	static class BiomeGenCustom extends Biome {
 		public BiomeGenCustom() {
-			super(new Biome.BiomeProperties("Nether Biome").setRainfall(0.5F).setBaseHeight(0.1F).setHeightVariation(0.2F).setTemperature(0.5F));
+			super(new Biome.BiomeProperties("Nether Biome").setRainfall(0F).setBaseHeight(0.1F).setHeightVariation(0.2F)
+					.setTemperature(1.7000000000000002F));
 			setRegistryName("nether_biome");
 			topBlock = BlockNewNetherRack.block.getDefaultState();
 			fillerBlock = BlockNewNetherRack.block.getDefaultState();
@@ -55,6 +57,7 @@ public class BiomeNetherBiome extends ElementsNetherMod.ModElement {
 			this.spawnableCaveCreatureList.clear();
 			this.spawnableCreatureList.add(new SpawnListEntry(EntityPiglinNormal.EntityCustom.class, 20, 4, 4));
 			this.spawnableCreatureList.add(new SpawnListEntry(EntityZombiePiglin.EntityCustom.class, 20, 4, 4));
+			this.spawnableCreatureList.add(new SpawnListEntry(EntityGhast.class, 20, 4, 4));
 		}
 
 		@SideOnly(Side.CLIENT)

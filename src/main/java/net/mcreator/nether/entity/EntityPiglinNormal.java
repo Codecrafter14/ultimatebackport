@@ -39,9 +39,7 @@ import net.mcreator.nether.procedure.ProcedurePiglinNormalRightClickedOnEntity;
 import net.mcreator.nether.ElementsNetherMod;
 
 import java.util.Map;
-import java.util.Iterator;
 import java.util.HashMap;
-import java.util.ArrayList;
 
 @ElementsNetherMod.ModElement.Tag
 public class EntityPiglinNormal extends ElementsNetherMod.ModElement {
@@ -60,16 +58,9 @@ public class EntityPiglinNormal extends ElementsNetherMod.ModElement {
 
 	@Override
 	public void init(FMLInitializationEvent event) {
-		Biome[] spawnBiomes = allbiomes(Biome.REGISTRY);
+		Biome[] spawnBiomes = {Biome.REGISTRY.getObject(new ResourceLocation("nether:nether_biome")),
+				Biome.REGISTRY.getObject(new ResourceLocation("nether:crimsonforest")),};
 		EntityRegistry.addSpawn(EntityCustom.class, 20, 1, 4, EnumCreatureType.MONSTER, spawnBiomes);
-	}
-
-	private Biome[] allbiomes(net.minecraft.util.registry.RegistryNamespaced<ResourceLocation, Biome> in) {
-		Iterator<Biome> itr = in.iterator();
-		ArrayList<Biome> ls = new ArrayList<Biome>();
-		while (itr.hasNext())
-			ls.add(itr.next());
-		return ls.toArray(new Biome[ls.size()]);
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -88,7 +79,7 @@ public class EntityPiglinNormal extends ElementsNetherMod.ModElement {
 			super(world);
 			setSize(0.6f, 1.8f);
 			experienceValue = 5;
-			this.isImmuneToFire = true;
+			this.isImmuneToFire = false;
 			setNoAI(!true);
 			this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND, new ItemStack(Items.GOLDEN_SWORD, (int) (1)));
 		}
@@ -100,7 +91,7 @@ public class EntityPiglinNormal extends ElementsNetherMod.ModElement {
 			this.targetTasks.addTask(2, new EntityAIHurtByTarget(this, true));
 			this.tasks.addTask(3, new EntityAIWander(this, 0.8));
 			this.tasks.addTask(4, new EntityAILookIdle(this));
-			this.targetTasks.addTask(5, new EntityAINearestAttackableTarget(this, EntityPlayer.class, false, false));
+			this.targetTasks.addTask(5, new EntityAINearestAttackableTarget(this, EntityHoglin.EntityCustom.class, false, false));
 		}
 
 		@Override

@@ -14,7 +14,7 @@
       "falpha": 0.0
     },
     "ambientSound": {
-      "value": ""
+      "value": "CUSTOM:basalt.ambience"
     },
     "additionsSound": {
       "value": ""
@@ -30,7 +30,7 @@
     "particleToSpawn": {
       "value": "SNOWBALL"
     },
-    "particlesProbability": 0.5,
+    "particlesProbability": 1.3,
     "biomeCategory": "NETHER",
     "parent": {
       "value": "nether"
@@ -41,7 +41,7 @@
     "heightVariation": 0.2,
     "biomeType": "WARM",
     "spawnBiome": false,
-    "biomeWeight": 16,
+    "biomeWeight": 21,
     "biomeDictionaryTypes": [
       "NETHER"
     ],
@@ -56,20 +56,20 @@
     "cactiPerChunk": 0,
     "treesPerChunk": 0,
     "vanillaTreeType": "Default",
-    "treeType": 0,
-    "minHeight": 7,
+    "treeType": 1,
+    "minHeight": 1,
     "maxWaterDepth": 0,
     "treeStem": {
-      "value": ""
+      "value": "Blocks.BONE_BLOCK"
     },
     "treeBranch": {
-      "value": ""
+      "value": "Blocks.BONE_BLOCK"
     },
     "treeVines": {
-      "value": ""
+      "value": "Blocks.BONE_BLOCK"
     },
     "treeFruits": {
-      "value": ""
+      "value": "Blocks.SOUL_SAND"
     },
     "spawnStronghold": false,
     "spawnMineshaft": false,
@@ -91,7 +91,7 @@
           "value": "EntitySkeleton"
         },
         "minGroup": 4,
-        "maxGroup": 4,
+        "maxGroup": 10,
         "weight": 20,
         "spawnType": "monster"
       }

@@ -24,6 +24,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.gui.GuiButton;
 
+import net.mcreator.nether.procedure.ProcedureTaken;
 import net.mcreator.nether.NetherMod;
 import net.mcreator.nether.ElementsNetherMod;
 
@@ -67,6 +68,19 @@ public class GuiSmithingGUI extends ElementsNetherMod.ModElement {
 			this.customSlots.put(1, this.addSlotToContainer(new Slot(internal, 1, 73, 55) {
 			}));
 			this.customSlots.put(2, this.addSlotToContainer(new Slot(internal, 2, 139, 55) {
+				@Override
+				public ItemStack onTake(EntityPlayer entity, ItemStack stack) {
+					ItemStack retval = super.onTake(entity, stack);
+					GuiContainerMod.this.slotChanged(2, 1, 0);
+					return retval;
+				}
+
+				@Override
+				public void onSlotChange(ItemStack a, ItemStack b) {
+					super.onSlotChange(a, b);
+					GuiContainerMod.this.slotChanged(2, 2, b.getCount() - a.getCount());
+				}
+
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
@@ -413,5 +427,28 @@ public class GuiSmithingGUI extends ElementsNetherMod.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
+		if (slotID == 2 && changeType == 1) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ProcedureTaken.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 2 && changeType == 2) {
+			int amount = meta;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ProcedureTaken.executeProcedure($_dependencies);
+			}
+		}
 	}
 }

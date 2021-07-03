@@ -7,7 +7,13 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.init.Items;
 
+import net.mcreator.nether.item.ItemNetheritepickaxe;
 import net.mcreator.nether.item.ItemNetheriteSword;
+import net.mcreator.nether.item.ItemNetheriteShovel;
+import net.mcreator.nether.item.ItemNetheriteIngot;
+import net.mcreator.nether.item.ItemNetheriteHoe;
+import net.mcreator.nether.item.ItemNetheriteAxe;
+import net.mcreator.nether.item.ItemNetheiteArmor;
 import net.mcreator.nether.ElementsNetherMod;
 
 import java.util.Map;
@@ -39,18 +45,227 @@ public class ProcedureSmithing extends ElementsNetherMod.ModElement {
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
-		if (((new Object() {
+		if ((((new Object() {
 			public ItemStack getItemStack(BlockPos pos, int sltid) {
 				TileEntity inv = world.getTileEntity(pos);
 				if (inv instanceof TileEntityLockableLoot)
 					return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == new ItemStack(Items.DIAMOND_SWORD, (int) (1)).getItem())) {
+		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == new ItemStack(Items.DIAMOND_SWORD, (int) (1)).getItem())
+				&& ((new Object() {
+					public ItemStack getItemStack(BlockPos pos, int sltid) {
+						TileEntity inv = world.getTileEntity(pos);
+						if (inv instanceof TileEntityLockableLoot)
+							return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (1))).getItem() == new ItemStack(ItemNetheriteIngot.block, (int) (1))
+						.getItem()))) {
 			{
 				TileEntity inv = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 				if (inv != null && (inv instanceof TileEntityLockableLoot)) {
 					ItemStack _setstack = new ItemStack(ItemNetheriteSword.block, (int) (1));
+					_setstack.setCount(1);
+					((TileEntityLockableLoot) inv).setInventorySlotContents((int) (2), _setstack);
+				}
+			}
+		} else if ((((new Object() {
+			public ItemStack getItemStack(BlockPos pos, int sltid) {
+				TileEntity inv = world.getTileEntity(pos);
+				if (inv instanceof TileEntityLockableLoot)
+					return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+				return ItemStack.EMPTY;
+			}
+		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == new ItemStack(Items.DIAMOND_SHOVEL, (int) (1)).getItem())
+				&& ((new Object() {
+					public ItemStack getItemStack(BlockPos pos, int sltid) {
+						TileEntity inv = world.getTileEntity(pos);
+						if (inv instanceof TileEntityLockableLoot)
+							return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (1))).getItem() == new ItemStack(ItemNetheriteIngot.block, (int) (1))
+						.getItem()))) {
+			{
+				TileEntity inv = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+				if (inv != null && (inv instanceof TileEntityLockableLoot)) {
+					ItemStack _setstack = new ItemStack(ItemNetheriteShovel.block, (int) (1));
+					_setstack.setCount(1);
+					((TileEntityLockableLoot) inv).setInventorySlotContents((int) (2), _setstack);
+				}
+			}
+		} else if ((((new Object() {
+			public ItemStack getItemStack(BlockPos pos, int sltid) {
+				TileEntity inv = world.getTileEntity(pos);
+				if (inv instanceof TileEntityLockableLoot)
+					return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+				return ItemStack.EMPTY;
+			}
+		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == new ItemStack(Items.DIAMOND_HELMET, (int) (1)).getItem())
+				&& ((new Object() {
+					public ItemStack getItemStack(BlockPos pos, int sltid) {
+						TileEntity inv = world.getTileEntity(pos);
+						if (inv instanceof TileEntityLockableLoot)
+							return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (1))).getItem() == new ItemStack(ItemNetheriteIngot.block, (int) (1))
+						.getItem()))) {
+			{
+				TileEntity inv = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+				if (inv != null && (inv instanceof TileEntityLockableLoot)) {
+					ItemStack _setstack = new ItemStack(ItemNetheiteArmor.helmet, (int) (1));
+					_setstack.setCount(1);
+					((TileEntityLockableLoot) inv).setInventorySlotContents((int) (2), _setstack);
+				}
+			}
+		} else if ((((new Object() {
+			public ItemStack getItemStack(BlockPos pos, int sltid) {
+				TileEntity inv = world.getTileEntity(pos);
+				if (inv instanceof TileEntityLockableLoot)
+					return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+				return ItemStack.EMPTY;
+			}
+		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == new ItemStack(Items.DIAMOND_CHESTPLATE, (int) (1)).getItem())
+				&& ((new Object() {
+					public ItemStack getItemStack(BlockPos pos, int sltid) {
+						TileEntity inv = world.getTileEntity(pos);
+						if (inv instanceof TileEntityLockableLoot)
+							return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (1))).getItem() == new ItemStack(ItemNetheriteIngot.block, (int) (1))
+						.getItem()))) {
+			{
+				TileEntity inv = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+				if (inv != null && (inv instanceof TileEntityLockableLoot)) {
+					ItemStack _setstack = new ItemStack(ItemNetheiteArmor.body, (int) (1));
+					_setstack.setCount(1);
+					((TileEntityLockableLoot) inv).setInventorySlotContents((int) (2), _setstack);
+				}
+			}
+		} else if ((((new Object() {
+			public ItemStack getItemStack(BlockPos pos, int sltid) {
+				TileEntity inv = world.getTileEntity(pos);
+				if (inv instanceof TileEntityLockableLoot)
+					return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+				return ItemStack.EMPTY;
+			}
+		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == new ItemStack(Items.DIAMOND_LEGGINGS, (int) (1)).getItem())
+				&& ((new Object() {
+					public ItemStack getItemStack(BlockPos pos, int sltid) {
+						TileEntity inv = world.getTileEntity(pos);
+						if (inv instanceof TileEntityLockableLoot)
+							return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (1))).getItem() == new ItemStack(ItemNetheriteIngot.block, (int) (1))
+						.getItem()))) {
+			{
+				TileEntity inv = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+				if (inv != null && (inv instanceof TileEntityLockableLoot)) {
+					ItemStack _setstack = new ItemStack(ItemNetheiteArmor.legs, (int) (1));
+					_setstack.setCount(1);
+					((TileEntityLockableLoot) inv).setInventorySlotContents((int) (2), _setstack);
+				}
+			}
+		} else if ((((new Object() {
+			public ItemStack getItemStack(BlockPos pos, int sltid) {
+				TileEntity inv = world.getTileEntity(pos);
+				if (inv instanceof TileEntityLockableLoot)
+					return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+				return ItemStack.EMPTY;
+			}
+		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == new ItemStack(Items.DIAMOND_BOOTS, (int) (1)).getItem())
+				&& ((new Object() {
+					public ItemStack getItemStack(BlockPos pos, int sltid) {
+						TileEntity inv = world.getTileEntity(pos);
+						if (inv instanceof TileEntityLockableLoot)
+							return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (1))).getItem() == new ItemStack(ItemNetheriteIngot.block, (int) (1))
+						.getItem()))) {
+			{
+				TileEntity inv = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+				if (inv != null && (inv instanceof TileEntityLockableLoot)) {
+					ItemStack _setstack = new ItemStack(ItemNetheiteArmor.boots, (int) (1));
+					_setstack.setCount(1);
+					((TileEntityLockableLoot) inv).setInventorySlotContents((int) (2), _setstack);
+				}
+			}
+		} else if ((((new Object() {
+			public ItemStack getItemStack(BlockPos pos, int sltid) {
+				TileEntity inv = world.getTileEntity(pos);
+				if (inv instanceof TileEntityLockableLoot)
+					return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+				return ItemStack.EMPTY;
+			}
+		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == new ItemStack(Items.DIAMOND_PICKAXE, (int) (1)).getItem())
+				&& ((new Object() {
+					public ItemStack getItemStack(BlockPos pos, int sltid) {
+						TileEntity inv = world.getTileEntity(pos);
+						if (inv instanceof TileEntityLockableLoot)
+							return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (1))).getItem() == new ItemStack(ItemNetheriteIngot.block, (int) (1))
+						.getItem()))) {
+			{
+				TileEntity inv = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+				if (inv != null && (inv instanceof TileEntityLockableLoot)) {
+					ItemStack _setstack = new ItemStack(ItemNetheritepickaxe.block, (int) (1));
+					_setstack.setCount(1);
+					((TileEntityLockableLoot) inv).setInventorySlotContents((int) (2), _setstack);
+				}
+			}
+		} else if ((((new Object() {
+			public ItemStack getItemStack(BlockPos pos, int sltid) {
+				TileEntity inv = world.getTileEntity(pos);
+				if (inv instanceof TileEntityLockableLoot)
+					return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+				return ItemStack.EMPTY;
+			}
+		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == new ItemStack(Items.DIAMOND_AXE, (int) (1)).getItem())
+				&& ((new Object() {
+					public ItemStack getItemStack(BlockPos pos, int sltid) {
+						TileEntity inv = world.getTileEntity(pos);
+						if (inv instanceof TileEntityLockableLoot)
+							return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (1))).getItem() == new ItemStack(ItemNetheriteIngot.block, (int) (1))
+						.getItem()))) {
+			{
+				TileEntity inv = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+				if (inv != null && (inv instanceof TileEntityLockableLoot)) {
+					ItemStack _setstack = new ItemStack(ItemNetheriteAxe.block, (int) (1));
+					_setstack.setCount(1);
+					((TileEntityLockableLoot) inv).setInventorySlotContents((int) (2), _setstack);
+				}
+			}
+		} else if ((((new Object() {
+			public ItemStack getItemStack(BlockPos pos, int sltid) {
+				TileEntity inv = world.getTileEntity(pos);
+				if (inv instanceof TileEntityLockableLoot)
+					return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+				return ItemStack.EMPTY;
+			}
+		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == new ItemStack(Items.DIAMOND_HOE, (int) (1)).getItem())
+				&& ((new Object() {
+					public ItemStack getItemStack(BlockPos pos, int sltid) {
+						TileEntity inv = world.getTileEntity(pos);
+						if (inv instanceof TileEntityLockableLoot)
+							return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (1))).getItem() == new ItemStack(ItemNetheriteIngot.block, (int) (1))
+						.getItem()))) {
+			{
+				TileEntity inv = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+				if (inv != null && (inv instanceof TileEntityLockableLoot)) {
+					ItemStack _setstack = new ItemStack(ItemNetheriteHoe.block, (int) (1));
 					_setstack.setCount(1);
 					((TileEntityLockableLoot) inv).setInventorySlotContents((int) (2), _setstack);
 				}

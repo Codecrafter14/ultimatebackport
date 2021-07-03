@@ -34,9 +34,6 @@ import net.minecraft.client.model.ModelBase;
 
 import net.mcreator.nether.ElementsNetherMod;
 
-import java.util.Iterator;
-import java.util.ArrayList;
-
 @ElementsNetherMod.ModElement.Tag
 public class EntityStrider extends ElementsNetherMod.ModElement {
 	public static final int ENTITYID = 7;
@@ -53,16 +50,10 @@ public class EntityStrider extends ElementsNetherMod.ModElement {
 
 	@Override
 	public void init(FMLInitializationEvent event) {
-		Biome[] spawnBiomes = allbiomes(Biome.REGISTRY);
+		Biome[] spawnBiomes = {Biome.REGISTRY.getObject(new ResourceLocation("nether:basalt_delta")),
+				Biome.REGISTRY.getObject(new ResourceLocation("nether:crimsonforest")),
+				Biome.REGISTRY.getObject(new ResourceLocation("nether:nether_biome")),};
 		EntityRegistry.addSpawn(EntityCustom.class, 20, 4, 4, EnumCreatureType.MONSTER, spawnBiomes);
-	}
-
-	private Biome[] allbiomes(net.minecraft.util.registry.RegistryNamespaced<ResourceLocation, Biome> in) {
-		Iterator<Biome> itr = in.iterator();
-		ArrayList<Biome> ls = new ArrayList<Biome>();
-		while (itr.hasNext())
-			ls.add(itr.next());
-		return ls.toArray(new Biome[ls.size()]);
 	}
 
 	@SideOnly(Side.CLIENT)

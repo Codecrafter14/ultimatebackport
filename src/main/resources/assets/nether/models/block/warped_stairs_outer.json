@@ -1,0 +1,8 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "nether:blocks/warped_planks",
+    "top": "nether:blocks/warped_planks",
+    "side": "nether:blocks/warped_planks"
+  }
+}

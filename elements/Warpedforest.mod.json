@@ -43,13 +43,13 @@
     "parent": {
       "value": "nether"
     },
-    "rainingPossibility": 0.5,
-    "temperature": 0.5,
+    "rainingPossibility": 1.0,
+    "temperature": 0.0,
     "baseHeight": 0.1,
     "heightVariation": 0.2,
-    "biomeType": "WARM",
+    "biomeType": "DESERT",
     "spawnBiome": false,
-    "biomeWeight": 6,
+    "biomeWeight": 1,
     "biomeDictionaryTypes": [
       "NETHER"
     ],

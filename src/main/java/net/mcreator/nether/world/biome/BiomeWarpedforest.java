@@ -47,7 +47,7 @@ public class BiomeWarpedforest extends ElementsNetherMod.ModElement {
 	}
 	static class BiomeGenCustom extends Biome {
 		public BiomeGenCustom() {
-			super(new Biome.BiomeProperties("Warpedforest").setRainfall(0.5F).setBaseHeight(0.1F).setHeightVariation(0.2F).setTemperature(0.5F));
+			super(new Biome.BiomeProperties("Warpedforest").setRainfall(1F).setBaseHeight(0.1F).setHeightVariation(0.2F).setTemperature(0F));
 			setRegistryName("warpedforest");
 			topBlock = BlockWarpedFloor.block.getDefaultState();
 			fillerBlock = BlockNewNetherRack.block.getDefaultState();

@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "normal": {
+      "model": "nether:barrel"
+    },
+    "facing=south": {
+      "model": "nether:barrel"
+    },
+    "facing=north": {
+      "model": "nether:barrel"
+    },
+    "facing=east": {
+      "model": "nether:barrel",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "nether:barrel",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "nether:barrel",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "nether:barrel",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

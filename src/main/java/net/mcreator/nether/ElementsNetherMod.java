@@ -35,6 +35,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.block.Block;
 
 import net.mcreator.nether.gui.GuiSmithingGUI;
+import net.mcreator.nether.gui.GuiBarrelGUI;
 
 import java.util.function.Supplier;
 import java.util.Random;
@@ -100,6 +101,22 @@ public class ElementsNetherMod implements IFuelHandler, IWorldGenerator {
 				new net.minecraft.util.SoundEvent(new ResourceLocation("nether", "block.basalt.break")));
 		sounds.put(new ResourceLocation("nether", "block.shroomlight.break"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("nether", "block.shroomlight.break")));
+		sounds.put(new ResourceLocation("nether", "block.barrel.open"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("nether", "block.barrel.open")));
+		sounds.put(new ResourceLocation("nether", "smithing_table"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("nether", "smithing_table")));
+		sounds.put(new ResourceLocation("nether", "block.chain.destroy"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("nether", "block.chain.destroy")));
+		sounds.put(new ResourceLocation("nether", "block.chain.break"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("nether", "block.chain.break")));
+		sounds.put(new ResourceLocation("nether", "block.warpedfloor"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("nether", "block.warpedfloor")));
+		sounds.put(new ResourceLocation("nether", "nylium"), new net.minecraft.util.SoundEvent(new ResourceLocation("nether", "nylium")));
+		sounds.put(new ResourceLocation("nether", "netherrack"), new net.minecraft.util.SoundEvent(new ResourceLocation("nether", "netherrack")));
+		sounds.put(new ResourceLocation("nether", "ancientdebris"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("nether", "ancientdebris")));
+		sounds.put(new ResourceLocation("nether", "basalt.ambience"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("nether", "basalt.ambience")));
 	}
 
 	public void preInit(FMLPreInitializationEvent event) {
@@ -170,6 +187,8 @@ public class ElementsNetherMod implements IFuelHandler, IWorldGenerator {
 		public Object getServerGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
 			if (id == GuiSmithingGUI.GUIID)
 				return new GuiSmithingGUI.GuiContainerMod(world, x, y, z, player);
+			if (id == GuiBarrelGUI.GUIID)
+				return new GuiBarrelGUI.GuiContainerMod(world, x, y, z, player);
 			return null;
 		}
 
@@ -177,6 +196,8 @@ public class ElementsNetherMod implements IFuelHandler, IWorldGenerator {
 		public Object getClientGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
 			if (id == GuiSmithingGUI.GUIID)
 				return new GuiSmithingGUI.GuiWindow(world, x, y, z, player);
+			if (id == GuiBarrelGUI.GUIID)
+				return new GuiBarrelGUI.GuiWindow(world, x, y, z, player);
 			return null;
 		}
 	}

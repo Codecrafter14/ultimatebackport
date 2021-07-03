@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "nether:blocks/barrel_bottom",
+    "up": "nether:blocks/barrel_top",
+    "north": "nether:blocks/barrel_side",
+    "east": "nether:blocks/barrel_side",
+    "south": "nether:blocks/barrel_side",
+    "west": "nether:blocks/barrel_side",
+    "particle": "nether:blocks/barrel_bottom"
+  }
+}

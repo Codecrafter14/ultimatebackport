@@ -1,0 +1,33 @@
+{
+  "group": "nether",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "nether:crimson_plank"
+    },
+    "1": {
+      "item": "nether:crimson_plank"
+    },
+    "2": {
+      "item": "nether:crimson_plank"
+    },
+    "3": {
+      "item": "nether:crimson_plank"
+    },
+    "4": {
+      "item": "nether:crimson_plank"
+    },
+    "5": {
+      "item": "nether:crimson_plank"
+    }
+  },
+  "result": {
+    "item": "nether:crimson_slab",
+    "data": 0,
+    "count": 6
+  }
+}

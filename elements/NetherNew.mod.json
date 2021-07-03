@@ -4,16 +4,10 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "CUSTOM:Warpedforest"
-      },
-      {
-        "value": "CUSTOM:Crimsonforest"
-      },
-      {
-        "value": "CUSTOM:BasaltDelta"
+        "value": "CUSTOM:SoulsandValley"
       }
     ],
-    "worldGenType": "Nether like gen",
+    "worldGenType": "Normal world gen",
     "mainFillerBlock": {
       "value": "CUSTOM:NewNetherRack"
     },
@@ -32,7 +26,7 @@
     "hasSkyLight": false,
     "imitateOverworldBehaviour": false,
     "portalFrame": {
-      "value": "Blocks.OBSIDIAN"
+      "value": "CUSTOM:CryingObsidian"
     },
     "portalParticles": {
       "value": "PORTAL"

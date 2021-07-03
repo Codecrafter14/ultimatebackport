@@ -57,6 +57,12 @@
           "id": 2,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "Taken"
+          },
+          "onStackTransfer": {
+            "name": "Taken"
+          },
           "name": "Slot #2",
           "x": 264,
           "y": 91

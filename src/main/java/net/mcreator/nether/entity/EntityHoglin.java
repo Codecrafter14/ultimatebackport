@@ -36,9 +36,7 @@ import net.mcreator.nether.procedure.ProcedureHoglinOnEntityTickUpdate;
 import net.mcreator.nether.ElementsNetherMod;
 
 import java.util.Map;
-import java.util.Iterator;
 import java.util.HashMap;
-import java.util.ArrayList;
 
 @ElementsNetherMod.ModElement.Tag
 public class EntityHoglin extends ElementsNetherMod.ModElement {
@@ -56,16 +54,8 @@ public class EntityHoglin extends ElementsNetherMod.ModElement {
 
 	@Override
 	public void init(FMLInitializationEvent event) {
-		Biome[] spawnBiomes = allbiomes(Biome.REGISTRY);
+		Biome[] spawnBiomes = {Biome.REGISTRY.getObject(new ResourceLocation("nether:crimsonforest")),};
 		EntityRegistry.addSpawn(EntityCustom.class, 20, 4, 4, EnumCreatureType.MONSTER, spawnBiomes);
-	}
-
-	private Biome[] allbiomes(net.minecraft.util.registry.RegistryNamespaced<ResourceLocation, Biome> in) {
-		Iterator<Biome> itr = in.iterator();
-		ArrayList<Biome> ls = new ArrayList<Biome>();
-		while (itr.hasNext())
-			ls.add(itr.next());
-		return ls.toArray(new Biome[ls.size()]);
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -82,8 +72,8 @@ public class EntityHoglin extends ElementsNetherMod.ModElement {
 	public static class EntityCustom extends EntityMob {
 		public EntityCustom(World world) {
 			super(world);
-			setSize(0.6f, 1.8f);
-			experienceValue = 0;
+			setSize(1.4f, 1.4f);
+			experienceValue = 2;
 			this.isImmuneToFire = true;
 			setNoAI(!true);
 		}
@@ -156,9 +146,9 @@ public class EntityHoglin extends ElementsNetherMod.ModElement {
 			if (this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED) != null)
 				this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.3D);
 			if (this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH) != null)
-				this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(10D);
+				this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(40D);
 			if (this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) != null)
-				this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(3D);
+				this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(8D);
 		}
 	}
 

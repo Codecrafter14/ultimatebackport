@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "nether:blocks/warped_planks",
+    "particle": "nether:blocks/warped_planks"
+  }
+}

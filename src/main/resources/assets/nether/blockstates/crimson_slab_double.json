@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "variant=default": {
+      "model": "nether:crimson_slab_double"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "nether:blocks/stone_diorite",
+    "particle": "nether:blocks/stone_diorite"
+  }
+}

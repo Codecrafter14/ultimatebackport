@@ -115,7 +115,17 @@
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 4,
     "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:BasaltDelta"
+      },
+      {
+        "value": "CUSTOM:Crimsonforest"
+      },
+      {
+        "value": "CUSTOM:NetherBiome"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

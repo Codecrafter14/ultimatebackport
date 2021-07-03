@@ -1,8 +1,8 @@
 {
   "id_map": {
-    "GUI": 1,
+    "GUI": 2,
     "DIMENSION": 1,
-    "ENTITY": 14
+    "ENTITY": 15
   },
   "mod_elements": [
     {
@@ -968,26 +968,6 @@
       "registry_name": "weeping_vines"
     },
     {
-      "name": "NetherSword",
-      "type": "recipe",
-      "sortid": 86,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "nether_sword",
-      "path": "~/recipes"
-    },
-    {
-      "name": "NetherHelmet",
-      "type": "recipe",
-      "sortid": 87,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "nether_helmet",
-      "path": "~/recipes"
-    },
-    {
       "name": "BasaltBlockDestroyedByPlayer",
       "type": "procedure",
       "sortid": 88,
@@ -1044,76 +1024,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "NetherAxe",
-      "type": "recipe",
-      "sortid": 90,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "nether_axe",
-      "path": "~/recipes"
-    },
-    {
-      "name": "NetherHoe",
-      "type": "recipe",
-      "sortid": 91,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "nether_hoe",
-      "path": "~/recipes"
-    },
-    {
-      "name": "NetherPickaxe",
-      "type": "recipe",
-      "sortid": 92,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "nether_pickaxe",
-      "path": "~/recipes"
-    },
-    {
-      "name": "NetherShovel",
-      "type": "recipe",
-      "sortid": 93,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "nether_shovel",
-      "path": "~/recipes"
-    },
-    {
-      "name": "NetherChestplate",
-      "type": "recipe",
-      "sortid": 94,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "nether_chestplate",
-      "path": "~/recipes"
-    },
-    {
-      "name": "NetherLeggins",
-      "type": "recipe",
-      "sortid": 95,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "nether_leggins",
-      "path": "~/recipes"
-    },
-    {
-      "name": "NetherBoots",
-      "type": "recipe",
-      "sortid": 96,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "nether_boots",
-      "path": "~/recipes"
     },
     {
       "name": "NewFlintAndSteel",
@@ -1223,6 +1133,325 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "hoglin_cooked_porkchop"
+    },
+    {
+      "name": "BarrelGUI",
+      "type": "gui",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 2
+      },
+      "registry_name": "barrel_gui"
+    },
+    {
+      "name": "BarrelOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "barrel_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Barrel",
+      "type": "block",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "barrel"
+    },
+    {
+      "name": "Taken",
+      "type": "procedure",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "taken",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/recipes"
+    },
+    {
+      "name": "WarpedDoor",
+      "type": "block",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "warped_door"
+    },
+    {
+      "name": "WarpedSlab",
+      "type": "block",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "warped_slab"
+    },
+    {
+      "name": "CrimsonSlab",
+      "type": "block",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_slab"
+    },
+    {
+      "name": "GraniteWall",
+      "type": "block",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "granite_wall"
+    },
+    {
+      "name": "PolishedGraniteWall",
+      "type": "block",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_granite_wall"
+    },
+    {
+      "name": "AndesiteWall",
+      "type": "block",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "andesite_wall"
+    },
+    {
+      "name": "PolishedAndesiteWall",
+      "type": "block",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_andesite_wall"
+    },
+    {
+      "name": "DioriteWall",
+      "type": "block",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diorite_wall"
+    },
+    {
+      "name": "PolishedDioriteWall",
+      "type": "block",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_diorite_wall"
+    },
+    {
+      "name": "Crossbow",
+      "type": "gun",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 15
+      },
+      "registry_name": "crossbow"
+    },
+    {
+      "name": "CrimsonStairs",
+      "type": "block",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_stairs"
+    },
+    {
+      "name": "WarpedStairs",
+      "type": "block",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "warped_stairs"
+    },
+    {
+      "name": "WarpedRoots",
+      "type": "plant",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "warped_roots"
+    },
+    {
+      "name": "CrimsonStairsRecipe",
+      "type": "recipe",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_stairs_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "CrimsonSlabRecipe",
+      "type": "recipe",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_slab_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "WarpedStairsRecipe",
+      "type": "recipe",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "warped_stairs_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "BlackstoneStairs",
+      "type": "block",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blackstone_stairs"
+    },
+    {
+      "name": "Chain",
+      "type": "block",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chain"
+    },
+    {
+      "name": "Lantern",
+      "type": "block",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lantern"
+    },
+    {
+      "name": "Bastioremnant",
+      "type": "structure",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bastioremnant",
+      "path": "~/bastion"
+    },
+    {
+      "name": "WarpedFloorBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "warped_floor_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ChiseledQuartzBlock",
+      "type": "block",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chiseled_quartz_block"
+    },
+    {
+      "name": "PiglinNormalOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "piglin_normal_on_entity_tick_update",
+      "metadata": {
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [],
@@ -1467,6 +1696,106 @@
       ],
       "category": "master",
       "subtitle": ""
+    },
+    {
+      "name": "block.barrel.open",
+      "files": [
+        "open1",
+        "open2"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "smithing_table",
+      "files": [
+        "smithing_table1",
+        "smithing_table2",
+        "smithing_table3"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "block.chain.destroy",
+      "files": [
+        "break1",
+        "break2",
+        "break3",
+        "break4"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "block.chain.break",
+      "files": [
+        "break1",
+        "break2",
+        "break3",
+        "break4"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "block.warpedfloor",
+      "files": [
+        "break1",
+        "break2",
+        "break3",
+        "break4",
+        "break5",
+        "break6"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "nylium",
+      "files": [
+        "break1",
+        "break2",
+        "break3",
+        "break4",
+        "break5",
+        "break6"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "netherrack",
+      "files": [
+        "break1",
+        "break2",
+        "break3",
+        "break4",
+        "break5",
+        "break6"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "ancientdebris",
+      "files": [
+        "break1",
+        "break2",
+        "break3",
+        "break4",
+        "break5"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "basalt.ambience",
+      "files": [
+        "basalt_soulsandvalley"
+      ],
+      "category": "master",
+      "subtitle": ""
     }
   ],
   "language_map": {
@@ -1475,46 +1804,62 @@
       "tile.warped_nether_wart.name": "Warped Nether Wart Block",
       "entity.piglin_normal.name": "Piglin",
       "tile.smithing_table.name": "Smithing Table",
+      "subtitles.block.warpedfloor": "",
       "entity.strider.name": "Strider",
+      "subtitles.ancientdebris": "",
       "subtitles.block.basalt.break": "",
       "tipped_arrow.effect.slow_falling": "Arrow of Slow Falling",
+      "tile.warped_stairs.name": "Warped Stairs",
       "tile.respawnancor_3.name": "Respawnancorcharged 2",
-      "item.netherite_shovel.name": "Netherite Shovel",
       "advancements.junk.title": "Cover yourself in debris!",
+      "item.netherite_shovel.name": "Netherite Shovel",
       "subtitles.music.crimson_forest": "",
       "advancements.cute.title": "Oh, how cute!",
       "itemGroup.tabnetherupdate_blocks": "Netherupdate Mod",
       "advancements.onions.title": "Who is cutting onions?",
       "subtitles.mob.piglin.hurt": "",
+      "tile.blackstone_stairs.name": "Blackstone Stairs",
       "tile.warped_fence.name": "Warped Fence",
-      "advancements.enter_nether.title": "we have to go deeper",
+      "subtitles.netherrack": "",
       "item.record.pigstep.desc": "Lena Raine",
+      "advancements.enter_nether.title": "we have to go deeper",
+      "subtitles.block.chain.break": "",
+      "tile.warped_door.name": "Warped Door",
+      "tile.warped_roots.name": "Warped Roots",
       "advancements.hobby.descr": " Upgrade a diamond pickaxe to Netherite. Then think about your life choices.",
       "item.netheite_armorhelmet.name": "Netheite Armor Helmet",
       "subtitles.mob.piglinbrute.hurt": "",
       "item.netheite_armorbody.name": "Netheite Armor Body",
       "advancements.tourist_hotspot.descr": "Travel to all Nether biomes",
+      "tile.polished_granite_wall.name": "Polished Granite Wall",
+      "subtitles.basalt.ambience": "",
       "entity.zoglin.name": "Zoglin",
       "tile.target_block.name": "Target Block",
+      "tile.polished_diorite_wall.name": "Polished Diorite Wall",
       "tile.cracked_polished_blackstone.name": "Cracked Polished Blackstone",
       "entity.zombie_piglin.name": "Zombie Piglin",
+      "tile.diorite_wall.name": "Diorite Wall",
       "lingering_potion.effect.slow_falling": "Lingering Slow Falling",
       "subtitles.mob.zoglin.death": "",
       "item.netherite_axe.name": "Netherite Axe",
       "splash_potion.effect.slow_falling": "Splash Slow Falling",
       "tile.blackstone_wall.name": "Blackstone Wall",
+      "tile.crimson_stairs.name": "Crimson Stairs",
       "subtitles.block.respawn_ancor.charge": "",
       "subtitles.music.pigstep": "",
       "tile.crying_obsidian.name": "Crying Obsidian",
       "item.pigstep.name": "Pigstep",
+      "tile.lantern.name": "Lantern",
       "subtitles.mob.piglin.step": "",
       "tile.crimson_log.name": "Crimson Log",
       "tile.crimsonfance.name": "Crimson fence",
+      "subtitles.smithing_table": "",
       "tile.crimson_nylium.name": "Crimson Nylium",
       "entity.hoglin.name": "Hoglin",
       "item.netherite_scrap.name": "Netherite Scrap",
       "tile.crimson_trap_door.name": "Crimson Trap Door",
       "advancements.hobby.title": "My favourite Hobby",
+      "tile.crimson_slab.name": "Crimson Slab",
       "tile.warped_trapdoor.name": "Warped Trapdoor",
       "tile.black_stone.name": "Black Stone",
       "tile.soul_fire.name": "Soul Fire",
@@ -1536,22 +1881,29 @@
       "advancements.enter_nether.descr": "go to nether",
       "subtitles.mob.hoglin.death": "",
       "subtitles.block.shroomlight.break": "",
+      "tile.andesite_wall.name": "Andesite Wall",
+      "tile.chiseled_quartz_block.name": "Smooth Quartz Block",
       "subtitles.music.nether_waste": "",
+      "tile.warped_slab.name": "Warped Slab",
       "tile.polished_basalt.name": "Polished Basalt",
       "item.netherite_sword.name": "Netherite Sword",
       "tile.netherite_block.name": "Netherite Block",
       "tile.respawnancor.name": "Respawn ancor",
       "subtitles.mob.zoglin.step": "",
+      "subtitles.nylium": "",
+      "subtitles.block.chain.destroy": "",
       "item.netheite_armorboots.name": "Netheite Armor Boots",
       "tile.gold_nether.name": "Nether gold ore",
       "tile.shroom_light.name": "Shroom Light",
       "tile.polished_blackstone_bricks.name": "Polished Blackstone Bricks",
       "subtitles.mob.piglin.ambient": "",
+      "tile.polished_andesite_wall.name": "Polished Andesite Wall",
       "subtitles.mob.piglinbrute.death": "",
       "tile.warped_planks.name": "Warped Planks",
       "tile.warped_fungus.name": "Warped Fungus",
       "tile.chiseled_blackstone.name": "Chiseled Blackstone",
       "tile.warped_floor.name": "Warped nylium",
+      "tile.barrel.name": "Barrel",
       "tile.souldirt.name": "Soul soil",
       "tile.crimson_door.name": "Crimson Door",
       "subtitles.mob.hoglin.hurt": "",
@@ -1562,13 +1914,17 @@
       "subtitles.mob.piglinbrute.step": "",
       "advancements.go_deeper.descr": "Enter Nether",
       "item.netheritepickaxe.name": "Netheritepickaxe",
+      "tile.chain.name": "Chain",
       "tile.respawnancorcharged_2.name": "Respawnancorcharged 2",
       "tile.twisting_vines.name": "Twisting Vines",
       "subtitles.mob.hoglin.ambient": "",
       "tile.crimson_plank.name": "Crimson Plank",
       "item.nether_new.name": "New Nether Portal Igniter",
       "subtitles.mob.piglinbrute.idle": "",
+      "item.crossbow.name": "Crossbow",
+      "subtitles.block.barrel.open": "",
       "item.netheite_armorlegs.name": "Netheite Armor Leggings",
+      "tile.granite_wall.name": "Granite Wall",
       "subtitles.mob.piglin.death": ""
     }
   },
@@ -1582,13 +1938,17 @@
       {
         "name": "recipes",
         "children": []
+      },
+      {
+        "name": "bastion",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "nether",
     "modName": "nether",
-    "version": "2.4.7",
+    "version": "3.6.2",
     "author": "julian, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",

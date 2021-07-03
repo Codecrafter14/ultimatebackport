@@ -4,7 +4,7 @@
   "definition": {
     "name": "Slow Falling",
     "effectName": "Slow Falling",
-    "icon": "icons.png",
+    "icon": "slow.png",
     "color": {
       "value": -52,
       "falpha": 0.0

@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_post",
+  "textures": {
+    "wall": "nether:blocks/stone_diorite",
+    "particle": "nether:blocks/stone_diorite"
+  }
+}
