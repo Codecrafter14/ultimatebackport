@@ -1,0 +1,38 @@
+{
+  "group": "nether",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:quartz_block",
+      "data": 0
+    },
+    "1": {
+      "item": "minecraft:quartz_block",
+      "data": 32767
+    },
+    "2": {
+      "item": "minecraft:quartz_block",
+      "data": 32767
+    },
+    "3": {
+      "item": "minecraft:quartz_block",
+      "data": 32767
+    },
+    "4": {
+      "item": "minecraft:quartz_block",
+      "data": 32767
+    },
+    "5": {
+      "item": "minecraft:quartz_block",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "nether:quartzwall",
+    "count": 1
+  }
+}

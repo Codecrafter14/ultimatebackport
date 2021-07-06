@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_post",
+  "textures": {
+    "wall": "nether:blocks/quartz_block_top",
+    "particle": "nether:blocks/quartz_block_top"
+  }
+}

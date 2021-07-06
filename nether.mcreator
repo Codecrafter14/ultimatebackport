@@ -1452,6 +1452,25 @@
       "metadata": {
         "dependencies": []
       }
+    },
+    {
+      "name": "Quartzwall",
+      "type": "block",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quartzwall"
+    },
+    {
+      "name": "DioritewallRecipe",
+      "type": "recipe",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dioritewall_recipe",
+      "path": "~/recipes"
     }
   ],
   "variable_elements": [],
@@ -1861,6 +1880,7 @@
       "advancements.hobby.title": "My favourite Hobby",
       "tile.crimson_slab.name": "Crimson Slab",
       "tile.warped_trapdoor.name": "Warped Trapdoor",
+      "tile.quartzwall.name": "Quartzwall",
       "tile.black_stone.name": "Black Stone",
       "tile.soul_fire.name": "Soul Fire",
       "subtitles.mob.zoglin.hurt": "",
