@@ -1,0 +1,26 @@
+{
+  "group": "nether",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "nether:warped_planks"
+    },
+    "1": {
+      "item": "nether:warped_planks"
+    },
+    "2": {
+      "item": "nether:warped_planks"
+    },
+    "3": {
+      "item": "nether:warped_planks"
+    }
+  },
+  "result": {
+    "item": "minecraft:crafting_table",
+    "count": 1
+  }
+}

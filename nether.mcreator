@@ -1,19 +1,10 @@
 {
   "id_map": {
-    "GUI": 2,
     "DIMENSION": 1,
+    "GUI": 2,
     "ENTITY": 15
   },
   "mod_elements": [
-    {
-      "name": "NewNetherRack",
-      "type": "block",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "new_nether_rack"
-    },
     {
       "name": "NetherupdateBlocks",
       "type": "tab",
@@ -732,7 +723,7 @@
     {
       "name": "CrimsonLog",
       "type": "block",
-      "sortid": 11,
+      "sortid": 148,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1238,7 +1229,7 @@
     {
       "name": "CrimsonSlab",
       "type": "block",
-      "sortid": 112,
+      "sortid": 152,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1312,7 +1303,7 @@
     {
       "name": "CrimsonStairs",
       "type": "block",
-      "sortid": 120,
+      "sortid": 151,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1339,7 +1330,7 @@
     {
       "name": "CrimsonStairsRecipe",
       "type": "recipe",
-      "sortid": 123,
+      "sortid": 158,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1349,7 +1340,7 @@
     {
       "name": "CrimsonSlabRecipe",
       "type": "recipe",
-      "sortid": 124,
+      "sortid": 159,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1392,16 +1383,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "lantern"
-    },
-    {
-      "name": "Bastioremnant",
-      "type": "structure",
-      "sortid": 129,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "bastioremnant",
-      "path": "~/bastion"
     },
     {
       "name": "WarpedFloorBlockDestroyedByPlayer",
@@ -1471,6 +1452,179 @@
       "ids": {},
       "registry_name": "dioritewall_recipe",
       "path": "~/recipes"
+    },
+    {
+      "name": "NetherGoldLoot",
+      "type": "loottable",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nether_gold_loot"
+    },
+    {
+      "name": "CrimsonPressurePlate",
+      "type": "block",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_pressure_plate"
+    },
+    {
+      "name": "CrimsonPressurePlatePressed",
+      "type": "block",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_pressure_plate_pressed"
+    },
+    {
+      "name": "CrimsonPressurePlateEntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_pressure_plate_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AndesiteWallRec",
+      "type": "recipe",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "andesite_wall_rec"
+    },
+    {
+      "name": "PolishedAndesiteWallRec",
+      "type": "recipe",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_andesite_wall_rec"
+    },
+    {
+      "name": "DioriteWallRec",
+      "type": "recipe",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diorite_wall_rec"
+    },
+    {
+      "name": "PolishedDioriteWallRec",
+      "type": "recipe",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_diorite_wall_rec"
+    },
+    {
+      "name": "PolishedGraniteWallRec",
+      "type": "recipe",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_granite_wall_rec"
+    },
+    {
+      "name": "WarpedToStick",
+      "type": "recipe",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "warped_to_stick"
+    },
+    {
+      "name": "WarpedToCraftingTable",
+      "type": "recipe",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "warped_to_crafting_table"
+    },
+    {
+      "name": "CrimsonToCraftingTable",
+      "type": "recipe",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_to_crafting_table"
+    },
+    {
+      "name": "WarpedToPlank",
+      "type": "recipe",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "warped_to_plank"
+    },
+    {
+      "name": "CrimsonPressureRec",
+      "type": "recipe",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimson_pressure_rec"
+    },
+    {
+      "name": "WarpedPressurePlate",
+      "type": "block",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "warped_pressure_plate"
+    },
+    {
+      "name": "WarpedPressureRec",
+      "type": "recipe",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "warped_pressure_rec"
+    },
+    {
+      "name": "BarrelRec",
+      "type": "recipe",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "barrel_rec"
     }
   ],
   "variable_elements": [],
@@ -1824,14 +1978,15 @@
       "entity.piglin_normal.name": "Piglin",
       "tile.smithing_table.name": "Smithing Table",
       "subtitles.block.warpedfloor": "",
-      "entity.strider.name": "Strider",
       "subtitles.ancientdebris": "",
+      "entity.strider.name": "Strider",
       "subtitles.block.basalt.break": "",
       "tipped_arrow.effect.slow_falling": "Arrow of Slow Falling",
       "tile.warped_stairs.name": "Warped Stairs",
       "tile.respawnancor_3.name": "Respawnancorcharged 2",
-      "advancements.junk.title": "Cover yourself in debris!",
       "item.netherite_shovel.name": "Netherite Shovel",
+      "advancements.junk.title": "Cover yourself in debris!",
+      "tile.crimson_pressure_plate.name": "Crimson Pressure Plate",
       "subtitles.music.crimson_forest": "",
       "advancements.cute.title": "Oh, how cute!",
       "itemGroup.tabnetherupdate_blocks": "Netherupdate Mod",
@@ -1849,8 +2004,8 @@
       "item.netheite_armorhelmet.name": "Netheite Armor Helmet",
       "subtitles.mob.piglinbrute.hurt": "",
       "item.netheite_armorbody.name": "Netheite Armor Body",
-      "advancements.tourist_hotspot.descr": "Travel to all Nether biomes",
       "tile.polished_granite_wall.name": "Polished Granite Wall",
+      "advancements.tourist_hotspot.descr": "Travel to all Nether biomes",
       "subtitles.basalt.ambience": "",
       "entity.zoglin.name": "Zoglin",
       "tile.target_block.name": "Target Block",
@@ -1887,13 +2042,13 @@
       "item.netherite_ingot.name": "Netherite Ingot",
       "tile.warped_log.name": "Warped Log",
       "advancements.tourist_hotspot.title": "Tourist Hotspot",
-      "tile.new_nether_rack.name": "New Nether Rack",
       "item.netherite_hoe.name": "Netherite Hoe",
       "advancements.cute.descr": "Distract a piglin with gold",
       "tile.quartz_bricks.name": "Quartz Bricks",
       "advancements.onions.descr": "Obtain crying obsidian",
       "tile.weeping_vines.name": "Weeping Vines",
       "advancements.junk.descr": "Wear full Netherite armor.",
+      "tile.warped_pressure_plate.name": "Warped Pressure Plate",
       "potion.effect.slow_falling": "Slow Falling",
       "advancements.go_deeper.title": "We need to go deeper",
       "entity.piglinbrute.name": "Piglin brute",
@@ -1915,6 +2070,7 @@
       "item.netheite_armorboots.name": "Netheite Armor Boots",
       "tile.gold_nether.name": "Nether gold ore",
       "tile.shroom_light.name": "Shroom Light",
+      "tile.crimson_pressure_plate_pressed.name": "Crimson Pressure Plate Pressed",
       "tile.polished_blackstone_bricks.name": "Polished Blackstone Bricks",
       "subtitles.mob.piglin.ambient": "",
       "tile.polished_andesite_wall.name": "Polished Andesite Wall",

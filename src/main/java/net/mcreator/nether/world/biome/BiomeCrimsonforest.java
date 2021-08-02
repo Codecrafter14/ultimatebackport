@@ -19,7 +19,6 @@ import net.minecraft.block.Block;
 
 import net.mcreator.nether.entity.EntityPiglinNormal;
 import net.mcreator.nether.block.BlockShroomLight;
-import net.mcreator.nether.block.BlockNewNetherRack;
 import net.mcreator.nether.block.BlockCrimsonNylium;
 import net.mcreator.nether.block.BlockCrimsonLog;
 import net.mcreator.nether.ElementsNetherMod;
@@ -48,7 +47,7 @@ public class BiomeCrimsonforest extends ElementsNetherMod.ModElement {
 			super(new Biome.BiomeProperties("Crimsonforest").setRainfall(0F).setBaseHeight(0.1F).setHeightVariation(0.2F).setTemperature(0.5F));
 			setRegistryName("crimsonforest");
 			topBlock = BlockCrimsonNylium.block.getDefaultState();
-			fillerBlock = BlockNewNetherRack.block.getDefaultState();
+			fillerBlock = Blocks.NETHERRACK.getDefaultState();
 			decorator.treesPerChunk = 8;
 			decorator.flowersPerChunk = 0;
 			decorator.grassPerChunk = 0;
@@ -111,13 +110,13 @@ public class BiomeCrimsonforest extends ElementsNetherMod.ModElement {
 					Block ground = world.getBlockState(position.add(0, -1, 0)).getBlock();
 					Block ground2 = world.getBlockState(position.add(0, -2, 0)).getBlock();
 					if (!((ground == BlockCrimsonNylium.block.getDefaultState().getBlock()
-							|| ground == BlockNewNetherRack.block.getDefaultState().getBlock())
+							|| ground == Blocks.NETHERRACK.getDefaultState().getBlock())
 							&& (ground2 == BlockCrimsonNylium.block.getDefaultState().getBlock()
-									|| ground2 == BlockNewNetherRack.block.getDefaultState().getBlock())))
+									|| ground2 == Blocks.NETHERRACK.getDefaultState().getBlock())))
 						return false;
 					IBlockState state = world.getBlockState(position.down());
 					if (position.getY() < world.getHeight() - height - 1) {
-						world.setBlockState(position.down(), BlockNewNetherRack.block.getDefaultState(), 2);
+						world.setBlockState(position.down(), Blocks.NETHERRACK.getDefaultState(), 2);
 						for (int genh = position.getY() - 3 + height; genh <= position.getY() + height; genh++) {
 							int i4 = genh - (position.getY() + height);
 							int j1 = (int) (1 - i4 * 0.5);
@@ -214,13 +213,13 @@ public class BiomeCrimsonforest extends ElementsNetherMod.ModElement {
 			return blockType.getDefaultState().getMaterial() == Material.AIR || blockType == BlockCrimsonLog.block.getDefaultState().getBlock()
 					|| blockType == Blocks.NETHER_WART_BLOCK.getDefaultState().getBlock()
 					|| blockType == BlockCrimsonNylium.block.getDefaultState().getBlock()
-					|| blockType == BlockNewNetherRack.block.getDefaultState().getBlock();
+					|| blockType == Blocks.NETHERRACK.getDefaultState().getBlock();
 		}
 
 		@Override
 		protected void setDirtAt(World world, BlockPos pos) {
-			if (world.getBlockState(pos).getBlock() != BlockNewNetherRack.block.getDefaultState().getBlock())
-				this.setBlockAndNotifyAdequately(world, pos, BlockNewNetherRack.block.getDefaultState());
+			if (world.getBlockState(pos).getBlock() != Blocks.NETHERRACK.getDefaultState().getBlock())
+				this.setBlockAndNotifyAdequately(world, pos, Blocks.NETHERRACK.getDefaultState());
 		}
 
 		@Override

@@ -20,6 +20,7 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.Item;
+import net.minecraft.init.Blocks;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
@@ -102,7 +103,7 @@ public class BlockWarpedFloor extends ElementsNetherMod.ModElement {
 
 		@Override
 		public void getDrops(NonNullList<ItemStack> drops, IBlockAccess world, BlockPos pos, IBlockState state, int fortune) {
-			drops.add(new ItemStack(BlockNewNetherRack.block, (int) (1)));
+			drops.add(new ItemStack(Blocks.NETHERRACK, (int) (1)));
 		}
 
 		@Override

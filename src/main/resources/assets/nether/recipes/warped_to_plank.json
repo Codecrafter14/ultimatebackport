@@ -1,0 +1,13 @@
+{
+  "group": "nether",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "nether:warped_log"
+    }
+  ],
+  "result": {
+    "item": "nether:warped_planks",
+    "count": 4
+  }
+}

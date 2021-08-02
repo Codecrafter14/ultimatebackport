@@ -7,7 +7,7 @@
       "value": "CUSTOM:CrimsonNylium"
     },
     "undergroundBlock": {
-      "value": "CUSTOM:NewNetherRack"
+      "value": "Blocks.NETHERRACK"
     },
     "airColor": {
       "value": -39322,
@@ -30,9 +30,9 @@
       "value": ""
     },
     "moodSoundDelay": 6000,
-    "spawnParticles": false,
+    "spawnParticles": true,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "DRIP_LAVA"
     },
     "particlesProbability": 0.5,
     "biomeCategory": "NETHER",

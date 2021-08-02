@@ -5,9 +5,9 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.relauncher.Side;
 
 import net.minecraft.item.ItemStack;
+import net.minecraft.init.Blocks;
 import net.minecraft.creativetab.CreativeTabs;
 
-import net.mcreator.nether.block.BlockNewNetherRack;
 import net.mcreator.nether.ElementsNetherMod;
 
 @ElementsNetherMod.ModElement.Tag
@@ -22,7 +22,7 @@ public class TabNetherupdateBlocks extends ElementsNetherMod.ModElement {
 			@SideOnly(Side.CLIENT)
 			@Override
 			public ItemStack getTabIconItem() {
-				return new ItemStack(BlockNewNetherRack.block, (int) (1));
+				return new ItemStack(Blocks.NETHERRACK, (int) (1));
 			}
 
 			@SideOnly(Side.CLIENT)

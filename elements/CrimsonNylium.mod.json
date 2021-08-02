@@ -43,7 +43,7 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:NewNetherRack"
+      "value": "Blocks.NETHERRACK"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -111,7 +111,7 @@
     ],
     "blocksToReplace": [
       {
-        "value": "CUSTOM:NewNetherRack"
+        "value": "Blocks.NETHERRACK"
       }
     ],
     "frequencyPerChunks": 10,

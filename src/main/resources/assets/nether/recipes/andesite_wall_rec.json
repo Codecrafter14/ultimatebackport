@@ -1,0 +1,38 @@
+{
+  "group": "nether",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:stone",
+      "data": 5
+    },
+    "1": {
+      "item": "minecraft:stone",
+      "data": 5
+    },
+    "2": {
+      "item": "minecraft:stone",
+      "data": 5
+    },
+    "3": {
+      "item": "minecraft:stone",
+      "data": 5
+    },
+    "4": {
+      "item": "minecraft:stone",
+      "data": 5
+    },
+    "5": {
+      "item": "minecraft:stone",
+      "data": 5
+    }
+  },
+  "result": {
+    "item": "nether:andesite_wall",
+    "count": 6
+  }
+}

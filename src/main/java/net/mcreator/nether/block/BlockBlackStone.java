@@ -16,6 +16,7 @@ import net.minecraft.util.Rotation;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.Item;
+import net.minecraft.init.Blocks;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
@@ -67,7 +68,7 @@ public class BlockBlackStone extends ElementsNetherMod.ModElement {
 				public boolean apply(IBlockState blockAt) {
 					boolean blockCriteria = false;
 					IBlockState require;
-					if (blockAt.getBlock() == BlockNewNetherRack.block.getDefaultState().getBlock())
+					if (blockAt.getBlock() == Blocks.NETHERRACK.getDefaultState().getBlock())
 						blockCriteria = true;
 					return blockCriteria;
 				}

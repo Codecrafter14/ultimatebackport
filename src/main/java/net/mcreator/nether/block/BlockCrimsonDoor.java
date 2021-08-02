@@ -16,7 +16,6 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockDoor;
 import net.minecraft.block.Block;
 
-import net.mcreator.nether.creativetab.TabNetherupdateBlocks;
 import net.mcreator.nether.ElementsNetherMod;
 
 @ElementsNetherMod.ModElement.Tag
@@ -47,7 +46,7 @@ public class BlockCrimsonDoor extends ElementsNetherMod.ModElement {
 			setResistance(10F);
 			setLightLevel(0F);
 			setLightOpacity(0);
-			setCreativeTab(TabNetherupdateBlocks.tab);
+			setCreativeTab(null);
 		}
 
 		@Override

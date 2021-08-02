@@ -1,7 +1,7 @@
 {
   "variants": {
     "normal": {
-      "model": "nether:new_nether_rack"
+      "model": "nether:crimsonfencegate"
     }
   }
 }

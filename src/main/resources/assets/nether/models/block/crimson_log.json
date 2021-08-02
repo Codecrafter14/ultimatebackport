@@ -3,10 +3,10 @@
   "textures": {
     "down": "nether:blocks/crimson_log_top",
     "up": "nether:blocks/crimson_log_top",
-    "north": "nether:blocks/crimsonlog",
-    "east": "nether:blocks/crimsonlog",
-    "south": "nether:blocks/crimsonlog",
-    "west": "nether:blocks/crimsonlog",
+    "north": "nether:blocks/crimson_log_side",
+    "east": "nether:blocks/crimson_log_side",
+    "south": "nether:blocks/crimson_log_side",
+    "west": "nether:blocks/crimson_log_side",
     "particle": "nether:blocks/crimson_log_top"
   }
 }

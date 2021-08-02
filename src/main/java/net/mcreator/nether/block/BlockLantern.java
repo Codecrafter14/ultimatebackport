@@ -45,7 +45,7 @@ public class BlockLantern extends ElementsNetherMod.ModElement {
 			setHardness(1F);
 			setResistance(10F);
 			setLightLevel(0F);
-			setLightOpacity(255);
+			setLightOpacity(0);
 			setCreativeTab(TabNetherupdateBlocks.tab);
 		}
 

@@ -107,7 +107,7 @@
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "CUSTOM:NewNetherRack"
+        "value": "Blocks.NETHERRACK"
       }
     ],
     "frequencyPerChunks": 10,

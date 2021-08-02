@@ -10,7 +10,7 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:CrimsonPlank"
+        "value": "CUSTOM:CrimsonPlanks"
       },
       {
         "value": ""
@@ -19,22 +19,22 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:CrimsonPlank"
+        "value": "CUSTOM:CrimsonPlanks"
       },
       {
-        "value": "CUSTOM:CrimsonPlank"
+        "value": "CUSTOM:CrimsonPlanks"
       },
       {
         "value": ""
       },
       {
-        "value": "CUSTOM:CrimsonPlank"
+        "value": "CUSTOM:CrimsonPlanks"
       },
       {
-        "value": "CUSTOM:CrimsonPlank"
+        "value": "CUSTOM:CrimsonPlanks"
       },
       {
-        "value": "CUSTOM:CrimsonPlank"
+        "value": "CUSTOM:CrimsonPlanks"
       }
     ],
     "recipeReturnStack": {

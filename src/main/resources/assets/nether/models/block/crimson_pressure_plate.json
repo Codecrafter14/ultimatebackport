@@ -1,0 +1,8 @@
+{
+  "parent": "nether:custom/pressure_normal",
+  "textures": {
+    "all": "nether:blocks/crimson_planks",
+    "particle": "nether:blocks/crimson_planks",
+    "0": "nether:blocks/crimson_planks"
+  }
+}

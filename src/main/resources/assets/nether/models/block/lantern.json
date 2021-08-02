@@ -1,12 +1,9 @@
 {
-  "parent": "block/cube",
+  "parent": "nether:custom/lantern_floor",
   "textures": {
-    "down": "nether:blocks/lanternbottem",
-    "up": "nether:blocks/lanternbottem",
-    "north": "nether:blocks/lanternside",
-    "east": "nether:blocks/lanternside",
-    "south": "nether:blocks/lanternside",
-    "west": "nether:blocks/lanternside",
-    "particle": "nether:blocks/lanternbottem"
+    "all": "nether:blocks/lanterm",
+    "particle": "nether:blocks/lanterm",
+    "0": "nether:blocks/",
+    "missing": "nether:blocks/"
   }
 }

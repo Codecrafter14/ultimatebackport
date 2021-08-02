@@ -9,11 +9,11 @@ import net.minecraftforge.common.BiomeDictionary;
 
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.init.Blocks;
 import net.minecraft.entity.monster.EntityGhast;
 
 import net.mcreator.nether.entity.EntityZombiePiglin;
 import net.mcreator.nether.entity.EntityPiglinNormal;
-import net.mcreator.nether.block.BlockNewNetherRack;
 import net.mcreator.nether.ElementsNetherMod;
 
 import java.util.Random;
@@ -40,8 +40,8 @@ public class BiomeNetherBiome extends ElementsNetherMod.ModElement {
 			super(new Biome.BiomeProperties("Nether Biome").setRainfall(0F).setBaseHeight(0.1F).setHeightVariation(0.2F)
 					.setTemperature(1.7000000000000002F));
 			setRegistryName("nether_biome");
-			topBlock = BlockNewNetherRack.block.getDefaultState();
-			fillerBlock = BlockNewNetherRack.block.getDefaultState();
+			topBlock = Blocks.NETHERRACK.getDefaultState();
+			fillerBlock = Blocks.NETHERRACK.getDefaultState();
 			decorator.treesPerChunk = 0;
 			decorator.flowersPerChunk = 0;
 			decorator.grassPerChunk = 0;

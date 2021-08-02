@@ -14,6 +14,7 @@ import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.Item;
+import net.minecraft.init.Blocks;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.material.Material;
@@ -61,7 +62,7 @@ public class BlockAncientdebris extends ElementsNetherMod.ModElement {
 				public boolean apply(IBlockState blockAt) {
 					boolean blockCriteria = false;
 					IBlockState require;
-					if (blockAt.getBlock() == BlockNewNetherRack.block.getDefaultState().getBlock())
+					if (blockAt.getBlock() == Blocks.NETHERRACK.getDefaultState().getBlock())
 						blockCriteria = true;
 					return blockCriteria;
 				}

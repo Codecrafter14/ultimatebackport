@@ -4,10 +4,10 @@
   "definition": {
     "name": "Nether Biome",
     "groundBlock": {
-      "value": "CUSTOM:NewNetherRack"
+      "value": "Blocks.NETHERRACK"
     },
     "undergroundBlock": {
-      "value": "CUSTOM:NewNetherRack"
+      "value": "Blocks.NETHERRACK"
     },
     "airColor": {
       "value": -26215,

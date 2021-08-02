@@ -7,6 +7,9 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 
+import net.minecraft.world.IBlockAccess;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.EnumFacing;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.Item;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -23,7 +26,7 @@ public class BlockCrimsonStairs extends ElementsNetherMod.ModElement {
 	@GameRegistry.ObjectHolder("nether:crimson_stairs")
 	public static final Block block = null;
 	public BlockCrimsonStairs(ElementsNetherMod instance) {
-		super(instance, 120);
+		super(instance, 151);
 	}
 
 	@Override
@@ -42,11 +45,16 @@ public class BlockCrimsonStairs extends ElementsNetherMod.ModElement {
 			super(new Block(Material.WOOD).getDefaultState());
 			setUnlocalizedName("crimson_stairs");
 			setSoundType(SoundType.WOOD);
-			setHardness(1F);
-			setResistance(10F);
+			setHardness(3F);
+			setResistance(2F);
 			setLightLevel(0F);
 			setLightOpacity(255);
 			setCreativeTab(TabNetherupdateBlocks.tab);
+		}
+
+		@Override
+		public int getFlammability(IBlockAccess world, BlockPos pos, EnumFacing face) {
+			return 5;
 		}
 	}
 }

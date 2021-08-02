@@ -1,12 +1,8 @@
 {
-  "parent": "block/cube",
+  "parent": "nether:custom/chain",
   "textures": {
-    "down": "nether:blocks/chain2",
-    "up": "nether:blocks/chain2",
-    "north": "nether:blocks/chain1",
-    "east": "nether:blocks/chain1",
-    "south": "nether:blocks/chain1",
-    "west": "nether:blocks/chain1",
-    "particle": "nether:blocks/chain2"
+    "all": "nether:blocks/chain2",
+    "particle": "nether:blocks/chain2",
+    "0": "nether:blocks/chain2"
   }
 }

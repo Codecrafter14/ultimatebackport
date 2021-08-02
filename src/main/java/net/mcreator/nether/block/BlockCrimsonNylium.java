@@ -20,6 +20,7 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.Item;
+import net.minecraft.init.Blocks;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.material.Material;
@@ -73,7 +74,7 @@ public class BlockCrimsonNylium extends ElementsNetherMod.ModElement {
 				public boolean apply(IBlockState blockAt) {
 					boolean blockCriteria = false;
 					IBlockState require;
-					if (blockAt.getBlock() == BlockNewNetherRack.block.getDefaultState().getBlock())
+					if (blockAt.getBlock() == Blocks.NETHERRACK.getDefaultState().getBlock())
 						blockCriteria = true;
 					return blockCriteria;
 				}
@@ -99,7 +100,7 @@ public class BlockCrimsonNylium extends ElementsNetherMod.ModElement {
 
 		@Override
 		public void getDrops(NonNullList<ItemStack> drops, IBlockAccess world, BlockPos pos, IBlockState state, int fortune) {
-			drops.add(new ItemStack(BlockNewNetherRack.block, (int) (1)));
+			drops.add(new ItemStack(Blocks.NETHERRACK, (int) (1)));
 		}
 	}
 }

@@ -46,7 +46,7 @@
       "value": "Items.GOLD_NUGGET"
     },
     "dropAmount": 3,
-    "useLootTableForDrops": false,
+    "useLootTableForDrops": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canProvidePower": false,
@@ -107,7 +107,7 @@
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "CUSTOM:NewNetherRack"
+        "value": "Blocks.NETHERRACK"
       }
     ],
     "frequencyPerChunks": 10,

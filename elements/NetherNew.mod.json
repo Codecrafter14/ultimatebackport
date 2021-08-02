@@ -9,7 +9,7 @@
     ],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "CUSTOM:NewNetherRack"
+      "value": "Blocks.NETHERRACK"
     },
     "fluidBlock": {
       "value": "Blocks.LAVA"

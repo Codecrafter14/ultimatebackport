@@ -37,7 +37,7 @@ public class BlockCrimsonSlab extends ElementsNetherMod.ModElement {
 	@GameRegistry.ObjectHolder("nether:crimson_slab_double")
 	public static final Block block_slab_double = null;
 	public BlockCrimsonSlab(ElementsNetherMod instance) {
-		super(instance, 112);
+		super(instance, 152);
 	}
 
 	@Override
@@ -57,8 +57,8 @@ public class BlockCrimsonSlab extends ElementsNetherMod.ModElement {
 			super(Material.WOOD);
 			setUnlocalizedName("crimson_slab");
 			setSoundType(SoundType.WOOD);
-			setHardness(1F);
-			setResistance(10F);
+			setHardness(2F);
+			setResistance(3F);
 			setLightLevel(0F);
 			setLightOpacity(255);
 			setCreativeTab(TabNetherupdateBlocks.tab);
@@ -143,6 +143,10 @@ public class BlockCrimsonSlab extends ElementsNetherMod.ModElement {
 			public boolean isDouble() {
 				return true;
 			}
+		}
+		@Override
+		public int getFlammability(IBlockAccess world, BlockPos pos, EnumFacing face) {
+			return 5;
 		}
 	}
 }

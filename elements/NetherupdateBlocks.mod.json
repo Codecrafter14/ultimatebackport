@@ -4,7 +4,7 @@
   "definition": {
     "name": "Netherupdate Mod",
     "icon": {
-      "value": "CUSTOM:NewNetherRack"
+      "value": "Blocks.NETHERRACK"
     },
     "showSearch": false
   }

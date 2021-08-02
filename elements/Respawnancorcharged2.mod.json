@@ -3,7 +3,7 @@
   "_type": "block",
   "definition": {
     "texture": "crying_obsidian",
-    "textureTop": "portal2",
+    "textureTop": "respawn_ancor_topp",
     "textureLeft": "respawn_anchor_side1",
     "textureFront": "respawn_anchor_side1",
     "textureRight": "respawn_anchor_side1",

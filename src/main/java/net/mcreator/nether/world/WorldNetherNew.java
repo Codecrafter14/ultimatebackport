@@ -64,7 +64,6 @@ import net.minecraft.block.BlockFalling;
 import net.minecraft.block.Block;
 
 import net.mcreator.nether.item.ItemNetherNew;
-import net.mcreator.nether.block.BlockNewNetherRack;
 import net.mcreator.nether.block.BlockCryingObsidian;
 import net.mcreator.nether.ElementsNetherMod;
 
@@ -729,8 +728,8 @@ public class WorldNetherNew extends ElementsNetherMod.ModElement {
 	}
 
 	public static class ChunkProviderModded implements IChunkGenerator {
-		private static final IBlockState STONE = BlockNewNetherRack.block.getDefaultState();
-		private static final IBlockState STONE2 = BlockNewNetherRack.block.getDefaultState();
+		private static final IBlockState STONE = Blocks.NETHERRACK.getDefaultState();
+		private static final IBlockState STONE2 = Blocks.NETHERRACK.getDefaultState();
 		private static final IBlockState FLUID = Blocks.LAVA.getDefaultState();
 		private static final IBlockState AIR = Blocks.AIR.getDefaultState();
 		private static final IBlockState BEDROCK = Blocks.BEDROCK.getDefaultState();

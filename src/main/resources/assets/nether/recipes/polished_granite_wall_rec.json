@@ -1,0 +1,38 @@
+{
+  "group": "nether",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:stone",
+      "data": 2
+    },
+    "1": {
+      "item": "minecraft:stone",
+      "data": 2
+    },
+    "2": {
+      "item": "minecraft:stone",
+      "data": 2
+    },
+    "3": {
+      "item": "minecraft:stone",
+      "data": 2
+    },
+    "4": {
+      "item": "minecraft:stone",
+      "data": 2
+    },
+    "5": {
+      "item": "minecraft:stone",
+      "data": 2
+    }
+  },
+  "result": {
+    "item": "nether:polished_granite_wall",
+    "count": 6
+  }
+}
